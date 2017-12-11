@@ -1,0 +1,104 @@
+body{
+	background-repeat: no-repeat;
+	background: rgb(81,91,245); /* Old browsers */
+	background: -moz-linear-gradient(-45deg, rgba(81,91,245,1) 0%, rgba(129,4,159,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, rgba(81,91,245,1) 0%,rgba(129,4,159,1) 100%);  Chrome10-25,Safari5.1-6 
+	background: linear-gradient(135deg, rgba(81,91,245,1) 0%,rgba(129,4,159,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	color: white;
+	display: block;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#515bf5', endColorstr='#81049f',GradientType=1 ); /* IE6-9 */
+	font-family: "Avenir Next", sans-serif;
+	height: 100vh;
+	margin:0;
+	padding: 0;
+	position: relative;
+	width: 100vw;
+	text-align: left;
+	font-size: 1em;
+}
+
+
+.main{
+	color:white;
+	display: block;
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	padding: 100px 40px;
+}
+
+.icon{
+	background: white;
+	border-radius: 50%;
+	display: block;
+	height: 80px;
+	margin:0 0 20px 0; 
+	width: 80px;
+	vertical-align: top;
+	box-shadow: 0 5px 10px -5px rgba(6,3,32,0.4);
+}
+
+.icon img{
+	width: 80%;
+	margin: 10%;
+}
+
+.info{
+	margin:0;
+	display: inline-block;
+}
+.name{
+	font-size: 36px;
+	margin: 0;
+}
+.position{
+	color:#CFCFCF;
+	margin: 0;
+	font-weight: 400;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.mail{
+	text-decoration: underline;
+	margin-bottom: 30px;
+}
+.link{
+	text-decoration: none;
+	opacity: 0.8;
+	margin-right: 10px;
+	display: inline-block;
+	margin-bottom: 10px;
+	color: white;
+}
+.link:hover{
+	opacity: 1;
+}
+
+
+@media only screen and (min-width:601px){
+	.main{
+		width: 60%;
+		height: 200px;
+		top:50%;
+		left:50%;
+		margin-top: -100px;
+		margin-left: -30%;
+		padding: 0;
+	}
+	.icon{
+		display: inline-block;
+	}
+	.info{
+		width: calc(100% - 150px);
+		margin:0 0 0 40px;
+		display: inline-block;
+	}
+}
+
+@media only screen and (min-width:1000px){
+	.main{
+		width: 40%;
+		margin-left: -20%;
+	}
+
+}
