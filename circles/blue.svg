@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="545px" height="545px" viewBox="0 0 545 545" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>blue</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="78.2862689%" id="linearGradient-1">
+            <stop stop-color="#3C25FC" offset="0%"></stop>
+            <stop stop-color="#08BAF6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="migue.design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-503.000000, -27.000000)">
+        <circle id="blue" fill="url(#linearGradient-1)" cx="775.5" cy="299.5" r="272.5"></circle>
+    </g>
+</svg>

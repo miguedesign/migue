@@ -1,29 +1,18 @@
 body{
-	background-repeat: no-repeat;
-	background: rgb(81,91,245); /* Old browsers */
-	background: -moz-linear-gradient(-45deg, rgba(81,91,245,1) 0%, rgba(129,4,159,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, rgba(81,91,245,1) 0%,rgba(129,4,159,1) 100%);  Chrome10-25,Safari5.1-6 
-	background: linear-gradient(135deg, rgba(81,91,245,1) 0%,rgba(129,4,159,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	color: white;
+	background: #fff;
+	color: #3A3A3A;
 	display: block;
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#515bf5', endColorstr='#81049f',GradientType=1 ); /* IE6-9 */
-	font-family: "Avenir Next", sans-serif;
-	height: 100vh;
+	font-family: "Merriweather", "Avenir Next", "Noto sans", sans-serif;
 	margin:0;
 	padding: 0;
-	position: relative;
-	width: 100vw;
 	text-align: left;
 	font-size: 1em;
+	line-height: 1.8em;
 }
 
 
 .main{
-	color:white;
 	display: block;
-	position: absolute;
-	z-index: 10;
-	width: 100%;
 	padding: 100px 40px;
 }
 
@@ -35,7 +24,7 @@ body{
 	margin:0 0 20px 0; 
 	width: 80px;
 	vertical-align: top;
-	box-shadow: 0 5px 10px -5px rgba(6,3,32,0.4);
+	box-shadow: 0 5px 40px -5px rgba(81, 91, 245, 0.4);
 }
 
 .icon img{
@@ -49,41 +38,101 @@ body{
 }
 .name{
 	font-size: 36px;
-	margin: 0;
+	margin: 0 0 10px 0;
+	font-family: "Merriweather";
 }
 .position{
-	color:#CFCFCF;
-	margin: 0;
-	font-weight: 400;
-	font-size: 16px;
+	font-family: "Avenir Next", "Noto sans", sans-serif;
+	color:#999999;
+	margin: 0 0 30px 0;
+	font-weight: 600;
+	font-size: 14px;
 	text-transform: uppercase;
 }
 .mail{
-	text-decoration: underline;
+	font-family: "Avenir Next", "Noto sans", sans-serif;
+	margin-top: 30px;
 	margin-bottom: 30px;
 }
 .link{
 	text-decoration: none;
-	opacity: 0.8;
-	margin-right: 10px;
 	display: inline-block;
-	margin-bottom: 10px;
-	color: white;
+	transition: all ease .2s;
+	color: #3C25FC;
+	position: relative;
 }
-.link:hover{
-	opacity: 1;
+.link::after{
+	background:  rgba(60, 37, 252, 0.3);
+	bottom: 0;
+	content: '';
+	height: 0%;
+	left:  0;
+	position: absolute;
+	transition: all ease .2s;
+	width:  100%;
 }
 
+.link:hover::after{
+	opacity: 0.6;
+	height: 100%;
+}
+.social{
+	text-decoration: none;
+	display: inline-block;
+	margin-right: 5px;
+	transition: all ease .2s;
+	padding:  10px;
+	filter: grayscale(1);
+}
+.social span{
+	display:  none;
+}
+.social:hover{
+	filter: none;
+	transform: scale(1.2);
+}
+
+.circle{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 90%;
+	display: block;
+	position: fixed;
+	z-index: -1000;
+}
+.circle-1{
+	background-image: url('circles/blue.svg');
+	top: -300px;
+	width:  500px;
+	height:  500px;
+	left: 35%;
+}
+.circle-2{
+	background-image: url('circles/purple.svg');
+	left: -250px;
+	width:  300px;
+	height:  300px;
+	top: 40%;
+}
+.circle-3{
+	background-image: url('circles/black.svg');
+	bottom: -140px;
+	width:  200px;
+	height:  200px;
+	right: 10%;
+}
 
 @media only screen and (min-width:601px){
 	.main{
-		width: 60%;
 		height: 200px;
-		top:50%;
 		left:50%;
-		margin-top: -100px;
 		margin-left: -30%;
+		margin-top: -100px;
 		padding: 0;
+		position: absolute;
+		top:50%;
+		width: 60%;
+		z-index: 10;
 	}
 	.icon{
 		display: inline-block;
@@ -97,8 +146,8 @@ body{
 
 @media only screen and (min-width:1000px){
 	.main{
-		width: 40%;
-		margin-left: -20%;
+		width: 50%;
+		margin-left: -25%;
 	}
 
 }
