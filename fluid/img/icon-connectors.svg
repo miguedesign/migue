@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>connectors</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M3.15925275,2.03848032 L0.443066483,3.39657345 C0.311338883,3.46243725 0.151159406,3.40904409 0.0852956062,3.27731649 C0.0667815483,3.24028838 0.0571428571,3.19945822 0.0571428571,3.15805953 L0.0571428571,0.441873265 C0.0571428571,0.294597331 0.176533591,0.175206598 0.323809524,0.175206598 C0.365208216,0.175206598 0.406038367,0.184845289 0.443066483,0.203359347 L3.15925275,1.56145248 C3.29098035,1.62731628 3.34437351,1.78749576 3.27850971,1.91922336 C3.25270606,1.97083066 3.21086006,2.01267666 3.15925275,2.03848032 Z" id="path-1"></path>
+        <filter x="-62.5%" y="-31.2%" width="225.0%" height="225.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-4" cx="1.6" cy="1.6" r="1.6"></circle>
+        <filter x="-62.5%" y="-31.2%" width="225.0%" height="225.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Fluid" transform="translate(-559.000000, -509.000000)">
+            <g id="connectors" transform="translate(559.000000, 509.000000)">
+                <rect id="Rectangle" fill="#FFF6C4" x="0" y="0" width="40" height="40" rx="11.6"></rect>
+                <g id="Flow-/-Right-/-Snake-/-Up" transform="translate(7.600000, 8.800000)">
+                    <path d="M1.6,20.5 L5.62857143,20.5 C9.41566686,20.5 12.4857143,17.4299526 12.4857143,13.6428571 L12.4857143,8.68571429 C12.4857143,4.89861886 15.5557617,1.82857143 19.3428571,1.82857143 L23.3714286,1.82857143" id="path" stroke="#250271" stroke-width="1.33333333" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
+                    <g id="↪-B" transform="translate(21.942857, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Triangle" fill-rule="nonzero">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <use fill="#250271" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                    <g id="↪-A" transform="translate(1.600000, 20.522386) rotate(360.000000) translate(-1.600000, -20.522386) translate(0.000000, 18.922386)">
+                        <mask id="mask-5" fill="white">
+                            <use xlink:href="#path-4"></use>
+                        </mask>
+                        <g id="Oval" fill-rule="nonzero">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-4"></use>
+                            <use fill="#250271" xlink:href="#path-4"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

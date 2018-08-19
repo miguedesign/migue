@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1136px" height="345px" viewBox="0 0 1136 345" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>bg-confirm</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="95.4742932%" y2="95.4742932%" id="linearGradient-1">
+            <stop stop-color="#7A2ACD" offset="0%"></stop>
+            <stop stop-color="#4812DB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bg-confirm">
+            <path d="M40,0 C163.850454,63.416544 198.682712,345 582.013987,345 C965.345263,345 940.627776,63.416544 1136,0 C957.56589,0 187.418522,1.06411094e-20 40,0 Z" id="Path-3" fill="#702DFF" opacity="0.400000006" transform="translate(588.000000, 172.500000) scale(1, -1) translate(-588.000000, -172.500000) "></path>
+            <path d="M0,0 C123.850454,63.416544 158.682712,345 542.013987,345 C925.345263,345 900.627776,63.416544 1096,0 C917.56589,0 147.418522,1.06411094e-20 0,0 Z" id="Path-3" fill="#FFE866" opacity="0.400000006" transform="translate(548.000000, 172.500000) scale(1, -1) translate(-548.000000, -172.500000) "></path>
+            <path d="M30,10 C151.590409,69.7402226 185.787042,335 562.123221,335 C938.459401,335 914.192962,69.7402226 1106,10 C930.821987,10 174.728403,10 30,10 Z" id="Path-3" fill="url(#linearGradient-1)" fill-rule="nonzero" transform="translate(568.000000, 172.500000) scale(1, -1) translate(-568.000000, -172.500000) "></path>
+        </g>
+    </g>
+</svg>

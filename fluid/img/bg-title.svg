@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="290px" height="108px" viewBox="0 0 290 108" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>bg-title</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M145.5,43 C149.089851,43 152,40.1916043 152,36.7272727 C152,34.4177183 149.833333,30.5086274 145.5,25 C141.166667,30.5086274 139,34.4177183 139,36.7272727 C139,40.1916043 141.910149,43 145.5,43 Z" id="path-1"></path>
+        <filter x="-53.8%" y="-27.8%" width="207.7%" height="177.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bg-title">
+            <path d="M0,0 C41.846214,17.5165902 15.572164,108 145.090968,108 C274.609772,108 225.784678,13.404286 290,0 C229.711226,-1.63290681e-21 49.8093211,1.30632545e-21 0,0 Z" fill="#5819D6" fill-rule="nonzero"></path>
+            <g id="Oval-2-Copy-4">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFD800" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

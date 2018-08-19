@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="215px" height="77px" viewBox="0 0 215 77" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>bg-cta</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M25.9360614,14.2878113 C58.5071092,6.89023589 100.889428,14.2878113 152.104462,14.2878113 C175.468981,14.2878113 208.040029,37.3146133 175.468981,44.7121887 C142.897933,52.1097641 102.006815,44.7121887 49.30058,44.7121887 C25.9360614,44.7121887 -6.6349865,21.6853867 25.9360614,14.2878113 Z" id="path-1"></path>
+        <filter x="-19.8%" y="-67.6%" width="139.5%" height="289.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.439215686   0 0 0 0 0.176470588   0 0 0 0 1  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bg-cta" transform="translate(7.000000, -1.000000)">
+            <g id="Rectangle-5">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <path d="M13.2346944,16.4112044 C12.2360294,16.7112044 11.2373644,17.0112044 10.2386994,17.3112044 C7.99170317,18.0112044 5.66148486,18.8112044 3.83059905,20.5112044 C-0.580171319,24.6112044 0.751381999,31.7112044 3.83059905,36.2112044 C8.99036815,43.6112044 18.5609076,48.3112044 28.4643354,50.5112044 C38.3677632,52.7112044 48.7705235,52.6112044 59.0068397,52.6112044 C101.117213,52.4112044 144.14303,52.4112044 183.839963,40.7112044 C190.997062,38.6112044 199.236048,34.7112044 199.402493,28.4112044 C199.568937,21.5112044 196.323276,14.4112044 191.496395,10.9112044 C187.917845,8.31120445 183.756741,7.21120445 179.595637,6.71120445 C174.10298,6.01120445 168.610322,6.11120445 163.117665,5.51120445 C152.13235,4.31120445 141.063813,3.71120445 130.078498,3.51120445 C107.858202,3.11120445 85.637906,4.61120445 63.5840542,7.31120445 C46.7731936,9.21120445 29.6294446,11.6112044 13.2346944,16.4112044 Z" id="Shape" fill="#5819D6" transform="translate(100.204304, 28.029552) rotate(2.000000) translate(-100.204304, -28.029552) "></path>
+        </g>
+    </g>
+</svg>
