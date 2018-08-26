@@ -31,7 +31,7 @@ jQuery(document).ready(function($) {
 
 		}
 		else{
-			href = $(this).attr('href', 'uploads/fluid - Ui Flow.sketch');
+			href = $(this).attr('href', 'uploads/Fluid UI Library.sketch');
 			window.location = $(this).attr('href');
 			confirm.addClass('is-show');
 		}
