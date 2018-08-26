@@ -31,8 +31,10 @@ jQuery(document).ready(function($) {
 
 		}
 		else{
-			href = $(this).attr('href', 'uploads/Fluid UI Library.sketch');
-			window.location = $(this).attr('href');
+			// href = $(this).attr('href', 'uploads/Fluid-UI-Library.sketch');
+			// window.location = $(this).attr('href');
+			href = './uploads/Fluid-UI-Library.sketch'
+			window.open(href);
 			confirm.addClass('is-show');
 		}
 
