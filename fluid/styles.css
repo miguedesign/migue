@@ -401,9 +401,11 @@ button,
 @media only screen and (min-width:1000px){
 	body{
 		background-image: url('./img/bg-fluid-dk.png');
-		background-size: 96%;
+		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
+		position: relative;
+		height: 100vh;
 	}
 	.Title{
 		font-size: 80px;
@@ -460,4 +462,14 @@ button,
 }
 
 @media only screen and (min-width:1400px){
+	body{
+		background-size: 80%;
+	}
+	.main{
+		height: 100vh
+	}
+	.Title{
+		margin-top: 12%;
+	}
+
 }
