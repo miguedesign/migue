@@ -13,7 +13,6 @@ body{
 
 .Main{
 	display: block;
-	height: 100vh;
 }
 .Container{
 	padding: 100px 30px;
@@ -147,6 +146,10 @@ body{
 }
 
 @media only screen and (min-width:1000px){
+	.Main{
+		display: block;
+		height: 100vh;
+	}
 	.Container{
 		padding: 100px;
 	}	
