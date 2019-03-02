@@ -16,7 +16,7 @@ body{
 	height: 100vh;
 }
 .Container{
-	padding: 100px;
+	padding: 100px 30px;
 }
 
 .Intro p{
@@ -49,10 +49,6 @@ body{
 	top: 10px;
 	left: 110%;
 	width:  4px
-}
-.Socials{
-	position: absolute;
-	bottom: 100px
 }
 .Socials ul{
 	padding: 0
@@ -115,20 +111,24 @@ body{
 	position: relative;
 	color: #ffffff;
 	text-decoration: none;
+	padding-right:  20px;
 }
-.Description .link_things:after{
+.Description .link_things:before{
+	border-right: solid 2px #ffffff;
+	border-top: solid 2px #ffffff;
 	content: '';
 	display:  block;
-	background-color:  #ffffff;
-	position:  absolute;
-	right: -30px;
-	top: 50%;
+	height: 5px;
+	position: absolute;
+	right: 5px;
 	transition: all .3s cubic-bezier(.8,0,.2,1);
-	width:  24px;
-	height: 2px;
+	top: 10px;
+	transform: rotate(45deg);
+	width: 5px;
+
 }
-.Description .link_things:hover:after{
-	right: -35px;
+.Description .link_things:hover:before{
+	right: -5px;
 }
 .Description .trigger,
 .Description .link{
@@ -147,6 +147,13 @@ body{
 }
 
 @media only screen and (min-width:1000px){
+	.Container{
+		padding: 100px;
+	}	
+	.Socials{
+		position: absolute;
+		bottom: 100px
+	}
 	.Socials_link:hover:after{
 		width: 20px;
 		height: 20px;
