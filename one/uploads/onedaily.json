@@ -2,35 +2,14 @@
 	"onedaily":
 	[
 		{
-			"name":"Random App Concept",
+			"name":"Schedule Event Concept",
 			"day":"1",
-			"date":"10 - marzo - 2019",
+			"date":"18 - march - 2019",
 			"category":"Minimal - Monday",
-			"brief":"To design a “hostels/accommodation” booking app as a freebie in sketch. ",
-			"time":"1 hour",
-			"fonts":"SF Pro text & display",
+			"brief":"To design a schedule for event of the exposition an artist.",
+			"time":"30 hour",
+			"fonts":"Gotham",
 			"resources":"unsplash"
-		},
-		{
-			"name":"Camping Spots Finder App",
-			"day":"2",
-			"date":"11 - marzo - 2019",
-			"category":"Redesign - Tuesday",
-			"brief":"Concept design as a freebie in sketch. ",
-			"time":"2 hour",
-			"fonts":"Roboto Mono",
-			"resources":"unsplash"
-		},
-		{
-			"name":"Fitness Challenges/Dare App",
-			"day":"3",
-			"date":"12 - marzo - 2019",
-			"category":"Wireframe - Wednesday",
-			"brief":"Freebie in sketch. ",
-			"time":"1.5 hour",
-			"fonts":"Mono",
-			"resources":"unsplash"
-		}
-		
+		}		
 	]
 }
