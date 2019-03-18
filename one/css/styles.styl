@@ -99,6 +99,11 @@ menu,
 nav,
 section 
 	display block
+	
+::selection
+	background dark_color
+	color light_color
+  
 img 
 	display block
 	width 100%
@@ -243,9 +248,8 @@ article
 	margin-top 10px
 	margin-bottom 60px
 	position relative
-	&:nth-child(2n 
-		& + 1) 
-			margin-right 10%
+	&:nth-child(2n + 1) 
+			margin-right 12%
 	h3 
 		font-size 24px
 		margin-bottom 0
@@ -270,7 +274,7 @@ article
 	color rgba(light_color, 0.8)
 	background-color dark_color
 	.Header 
-		background-color rgba(0,0,0, 0.90)
+		background-color rgba(dark_color 0.90)
 	.logo 
 		color rgba(light_color, 0.9)
 	a 
