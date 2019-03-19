@@ -1,4 +1,11 @@
 jQuery(document).ready(function($) {
+
+
+	$('.btn-menu').on('click', function(e){
+		e.preventDefault();
+		$(this).toggleClass('is-clicked');
+		$('.menu').toggleClass('is-open');
+	})
 	
 	// Theme  day & dark
 	function theme(){
