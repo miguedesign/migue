@@ -1,0 +1,133 @@
+body{
+	display: block;
+	font-family: "Archivo Black", sans-serif;
+	margin:0;
+	padding: 0;
+	text-align: center;
+	font-size: 1em;
+	line-height: 1.8em;
+	transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.Main{}
+.Container{
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.Description{
+	background: #456BFE;
+	color: #fff;
+	text-align: left;
+	padding: 20px 0;
+}
+
+.Description p{
+	font-size: 24px;
+	line-height: 40px;
+	font-weight: normal;
+	display: inline-block;
+	letter-spacing: -0.1px
+}
+.Socials{
+	font-family: "Work Sans", sans-serif;
+	padding: 30px 0;
+	text-align: center;
+}
+.Socials_Links{
+	list-style: none;
+	padding: 0;
+}
+.Socials_Links li{
+	display: inline-block;
+	width: 49%;
+	margin: 0 0 20px 0;
+}	
+.Socials_link{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+	display: block;
+	padding: 5px 10px;
+	color: #456BFE;
+}
+.Socials_link span{
+	display: none;
+}
+.Socials_Message{
+	list-style: none;
+	padding: 10px 0;
+}
+#Message{
+	color: #6F7389;
+}
+
+.Link{
+	text-decoration: underline;
+	color: inherit;
+	transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@media only screen and (min-width:1200px){
+	body{
+		font-size: 2.5vw;
+	}
+	.Container{
+		max-width: 81.667vw;
+		margin: 0 auto;
+	}
+	.Description{
+		padding: 4.333vw 0;
+	}
+	.Description p{
+		font-size: 4.667vw;
+		line-height: 6.467vw;
+		margin: 0;
+	}
+	.Link:hover{
+		opacity: .6;
+	}
+
+	.Socials{
+		text-align: left;
+		padding: 0;
+	}
+	.Socials .Container{
+		position: relative;
+	}
+	.Socials_Links{
+		display: inline-block;
+		margin-top: 0;
+	}
+	.Socials_Links li{
+		display: inline-block;
+		width: auto;
+		margin: 0 10px 0 0;
+	}
+	.Socials_link{
+		font-size: 1.167vw; 
+		padding: 0;
+		margin: 0;
+		line-height: 1;
+		position: relative
+	}
+	.Socials_link:after{
+		content: '';
+		display: block;
+		background: #456BFE;
+		width: 0px;
+		height: 1px;
+		transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	}
+	.Socials_link:hover:after{
+		width: 100%;
+	}
+	.Socials_Message{
+		display: inline-block;
+	}
+	#Message{
+		position: absolute;
+		font-size: 1.167vw;
+		right: 0;
+	}
+
+}
