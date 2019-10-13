@@ -16,7 +16,7 @@ a{
 }
 .Main{}
 .Container{
-	max-width: 80%;
+	max-width: 90%;
 	margin: 0 auto;
 }
 
@@ -59,12 +59,13 @@ a{
 
 .Project{
 	border-bottom: solid 1px rgba(189, 192, 208, 0.3);
-	padding: 40px 0;
+	padding: 40px 0 60px;
 }
 .Project_Title{
 	font-family: "Archivo Black", sans-serif;
-	font-size: 40px;
-	line-height: 44px;
+	font-size: 32px;
+	line-height: 40px;
+	margin-bottom: 0;
 }
 .Project_Description p{
 	font-family: "Work sans", sans-serif;
@@ -173,7 +174,7 @@ a{
 		width: calc(100% - 23.438vw);
 	}
 	.Project{
-		padding: 0 0 3.125vw 0;
+		padding: 0 0 5.125vw 0;
 		margin-bottom: 6.250vw;
 	}
 	.Project_Title{
