@@ -12,7 +12,7 @@ body{
 	transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 a{
-	color: #456BFE;
+	color: #305AFE;
 }
 .Main{}
 .Container{
@@ -21,7 +21,7 @@ a{
 }
 
 .Description{
-	background: #456BFE;
+	background: #305AFE;
 	color: #fff;
 	text-align: left;
 	padding: 20px 0;
@@ -34,6 +34,9 @@ a{
 	display: inline-block;
 	letter-spacing: -0.1px
 }
+.Description .Links{
+	margin-top: 40px;
+}
 .Description .link{
 	color: white;
 	padding: 0;
@@ -42,6 +45,9 @@ a{
 #Projects{
 	text-align: left;
 	padding: 70px 0;
+}
+.Projects{
+	padding-bottom: 80px;
 }
 .Projects_Title h2{
 	font-family: "Work sans", sans-serif;
@@ -79,12 +85,23 @@ a{
 
 
 
-
+.Contact{
+	text-align: left;
+	padding: 40px;
+}
+.Contact h2{
+	font-size: 48px;
+	line-height: 80px;
+}
+.Contact a{
+	color: inherit;
+}
 
 .Socials{
 	padding: 30px 0;
 	text-align: center;
 	font-family: "Work Sans", sans-serif;
+	background-color: #305AFE;
 }
 .Links{
 	font-family: "Work Sans", sans-serif;
@@ -102,6 +119,7 @@ a{
 	font-size: 16px;
 	display: block;
 	padding: 5px 10px;
+	color: white;
 }
 .link span{
 	display: none;
@@ -111,7 +129,7 @@ a{
 	padding: 10px 0;
 }
 #Message{
-	color: #6F7389;
+	color: white;
 }
 
 .Link{
@@ -142,7 +160,7 @@ a{
 	.Projects_Title{
 		display: inline-block;
 		vertical-align: top;
-		width: 280px;
+		width: 21.875vw;
 	}
 	.Projects_Title h2{
 		writing-mode: vertical-rl;
@@ -151,14 +169,17 @@ a{
 	}
 	.Projects_List{
 		display: inline-block;
-		width: calc(100% - 300px);
+		width: calc(100% - 23.438vw);
 	}
 	.Project{
-		padding: 0 0 40px 0;
-		margin-bottom: 80px;
+		padding: 0 0 3.125vw 0;
+		margin-bottom: 6.250vw;
 	}
 	.Project_Title{
 		margin-top: 0;
+	}
+	.Contact{
+		padding: 3.125vw 0 3.125vw;
 	}
 	.Link:hover{
 		opacity: .6;
@@ -190,7 +211,7 @@ a{
 	.link:after{
 		content: '';
 		display: block;
-		background: #456BFE;
+		background: white;
 		width: 0px;
 		height: 1px;
 		transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
