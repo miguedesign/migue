@@ -189,6 +189,8 @@ a{
     display: block;
     width: 100%;
     margin: 40px auto 0;
+    color: var(--dark-color);
+    font-weight: 700;
 }
 .slider-content{
     background-color: #FAFAFF;
@@ -200,7 +202,26 @@ a{
 }
 .slider img{
     max-width: 200px;
+    margin: 40px auto;
 }
+
+.owl-dot {
+    outline: none;
+}
+.owl-dot span{
+    display: block;
+    background-color: var(--primary-color);
+    width: 30px;
+    height: 4px;
+    margin: 10px;
+    opacity: .3;
+    border-radius: 10px;
+}
+.owl-dot.active span{
+    opacity: 1;
+}
+
+
 .features-content{
     text-align: left;
 }
@@ -304,7 +325,7 @@ a{
     margin: 0 0 20px 0;
 }
 .get-option .button{
-    line-height: 64px;
+    line-height: 56px;
     width: 100%;
     border-radius: 40px;
     background-color: var(--light-color);
@@ -320,7 +341,7 @@ a{
     text-align: left;
     list-style: none;
     min-height: 130px;
-    list-style-image: url(./img/icon-check.svg);
+    list-style-image: url(../img/icon-check.svg);
     color: var(--light-color);
     padding: 0 0 0 20px;
 }
@@ -342,7 +363,7 @@ a{
 
 .get-pro .get-items-list{
     color: var(--acent-color);
-    list-style-image: url(./img/icon-check-pink.svg);
+    list-style-image: url(../img/icon-check-pink.svg);
 }
 
 .button.button-buy{
@@ -365,6 +386,9 @@ a{
 .footer a{
     color: var(--dark-color);
 }
+
+
+
 
 @media only screen and (min-width:1000px){
     .mobile{
@@ -442,7 +466,13 @@ a{
     }
     .slider img{
         max-width: 200px;
+        margin-top: 80px;
+        margin-bottom: 140px;
     }
+    .owl-dots{
+        margin-top: 40px;
+    }
+
     .features-title{
         font-size: 48px;
         line-height: 56px;

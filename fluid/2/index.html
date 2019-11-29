@@ -7,8 +7,9 @@
 	<link rel="icon" href="./img/favicon.png" sizes="32x32">
 	<link href='https://fonts.googleapis.com/css?family=Archivo+Black|Noto+Sans' rel='stylesheet' type='text/css'>
 	<meta name="description" content="Fluid : Sketch library for diagrams, sitemaps, and flows and Information architecture.">
-	<link rel="stylesheet" href="styles.css">
-
+    <link rel="stylesheet" href="./css/owl.theme.green.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
 	<!-- twitter card -->
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="https://twitter.com/elnodos">
@@ -69,10 +70,20 @@
             <div class="features-slider">
                 <div class="slider">
                     <div class="slider-content">
-                        <a href="#dark" class="toggle-dark">
-                            <span>dark mode</span>
-                        </a>
-                        <img src="./img/connectors/up-u-turn.svg" alt="">
+                        <div class="owl-carousel">
+                            <div class="item">
+                                <img src="./img/connectors/up-u-turn.svg" alt="">
+                                <p>U-turn</p>
+                            </div>
+                            <div class="item">
+                                <img src="./img/connectors/up-hook-alt.svg" alt="">
+                                <p>U-turn Alt</p>
+                            </div>
+                            <div class="item">
+                                <img src="./img/connectors/down-right.svg" alt="">
+                                <p>Down right</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -118,7 +129,20 @@
             <div class="features-slider">
                 <div class="slider">
                     <div class="slider-content">
-                        <img src="./img/slide-overrides.png" alt="">
+                        <div class="owl-carousel">
+                            <div class="item">
+                                <img src="./img/slide-overrides.png" alt="">
+                                <p>Easy Editing with Sketch Overrides</p>
+                            </div>
+                            <div class="item">
+                                <img src="./img/slide-blocks.png" alt="">
+                                <p>Annotates, blocks, buttons and devices</p>
+                            </div>
+                            <div class="item">
+                                <img src="./img/slide-smart.png" alt="">
+                                <p>Smart layout & Flexible Symbols</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -197,6 +221,7 @@
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
 <script type='text/javascript' src="./js/main.js" async></script>
 	
 </body>
