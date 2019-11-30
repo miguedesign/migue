@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="60px" height="215px" viewBox="0 0 60 215" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="240px" height="240px" viewBox="0 0 240 240" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
     <title>Down Straight</title>
     <desc>Created with Sketch.</desc>
@@ -7,8 +7,8 @@
         <circle id="path-1" cx="8.4" cy="8.4" r="8"></circle>
         <circle id="path-3" cx="10" cy="10" r="8"></circle>
     </defs>
-    <g id="Landing-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Flow/Down/Straight" transform="translate(-60.000000, 30.000000)">
+    <g id="Down-Straight" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Flow/Down/Straight" transform="translate(30.000000, 30.000000)">
             <g id="_-Assets/End-point/interaction/tap" transform="translate(90.000000, 0.000000) scale(-1, 1) translate(-90.000000, -0.000000) translate(60.000000, -30.000000)">
                 <circle id="fill" fill="#5B45FF" fill-rule="evenodd" cx="30" cy="30" r="30"></circle>
                 <g id="_-Assets/End-point/cap/circle" transform="translate(21.600000, 21.600000)">

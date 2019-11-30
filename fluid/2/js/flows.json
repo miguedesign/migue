@@ -1,0 +1,53 @@
+{
+	"flows":
+	[
+		{
+			"name":"Up Straight",
+			"type":"0"
+		},
+		{
+			"name":"Up Curve Right",
+			"type":"0"
+		},
+		{
+			"name":"Up Curve Right Hook",
+			"type":"0"
+        },
+        {
+			"name":"Right Straight",
+			"type":"0"
+		},
+		{
+			"name":"Right Snake Up",
+			"type":"0"
+		},
+		{
+			"name":"Right Snake Up Hook",
+			"type":"0"
+		},
+		{
+			"name":"Down Straight",
+			"type":"0"
+		},
+		{
+			"name":"Down Curve Right",
+			"type":"0"
+		},
+		{
+			"name":"Down Snake Right",
+			"type":"0"
+		},
+		{
+			"name":"Left Straight",
+			"type":"0"
+		},
+		{
+			"name":"Left Curve Up U-turn",
+			"type":"0"
+		},
+		{
+			"name":"Left Snake Up",
+			"type":"0"
+        }
+	]
+}

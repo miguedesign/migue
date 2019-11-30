@@ -168,7 +168,10 @@ a{
 
 .features{
     padding: 80px 0;
+    transition:all .3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
+
 .features .container{
     display: flex;
     justify-content: space-between;
@@ -200,11 +203,20 @@ a{
     padding: 40px;
     min-height: 300px;
 }
+
 .slider img{
-    max-width: 200px;
     margin: 40px auto;
 }
-
+.owl-carousel.is-hide{
+    /* display: none; */
+    overflow: hidden;
+    height: 0;
+}
+.owl-carousel.is-active{
+    /* display: block; */
+    overflow: hidden;
+    height: auto;
+}
 .owl-dot {
     outline: none;
 }
@@ -221,6 +233,27 @@ a{
     opacity: 1;
     width: 20px;
 }
+
+/* Change theme Alt */
+.features.is-alt{
+    background-color: rgba(255,238,245, 1)
+}
+.features.is-alt .owl-dot span{
+    background-color: var(--acent-color);
+}
+.features.is-alt .features-caption p{
+    color: var(--acent-color);
+}
+
+.features.is-alt .slider-content{
+    background-color: #FFFEFF;
+    box-shadow: inset -3px -3px 5px 0 rgba(255,15,119, .1), inset 3px 4px 5px 0 rgba(255,255,255, 1);
+}
+
+/* /change theme */
+
+
+
 
 
 .features-content{
@@ -274,7 +307,7 @@ a{
     color: var(--acent-color);
 }
 .button-alternative.is-active{
-    border: solid 3px var(--acent-color);
+    border: dashed 3px var(--acent-color);
 }
 
 .example{
@@ -329,7 +362,8 @@ a{
     line-height: 56px;
     width: 100%;
     border-radius: 40px;
-    background-color: var(--light-color);
+    background-color: var(--primary-color);
+    color: var(--light-color);
     padding: 0;
     border: none;
 }
@@ -451,7 +485,7 @@ a{
     }
     
     .features{
-        padding: 180px 0;
+        padding: 140px 0;
     }
     .features .container{
         flex-wrap: nowrap;
@@ -464,12 +498,6 @@ a{
     }
     .slider-content{
         min-height: 500px;
-    }
-    .slider img{
-        max-width: 200px;
-        margin-top: 80px;
-        margin-bottom: 140px;
-        max-height: 200px;
     }
     
     .owl-dots{
@@ -489,9 +517,6 @@ a{
     .button{
         transition:all .3s cubic-bezier(0.645, 0.045, 0.355, 1);
     }
-    .button:hover{
-        opacity: .7;
-    }
     .button-default:hover,
     .button-default.is-active{
         border: solid 3px var(--primary-color);
@@ -501,7 +526,7 @@ a{
     }
     .button-alternative:hover,
     .button-alternative.is-active{
-        border: solid 3px var(--acent-color);
+        border: dashed 3px var(--acent-color);
     }
     
     .example{
@@ -525,6 +550,10 @@ a{
     }
     .get-items-list{
         min-height: 230px;
+    }
+    .get .button:hover{
+        opacity: .8;
+        box-shadow: 0 0 0 5px rgba(255,255,255, .2);
     }
     
     .footer{

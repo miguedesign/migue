@@ -10,6 +10,7 @@ jQuery(document).ready(function($) {
 	// Theme  day & dark
 	function theme(){
 		user = window.localStorage.getItem('user');
+		
 		render(user);
 	}
 	theme();
@@ -23,7 +24,7 @@ jQuery(document).ready(function($) {
 		
 		if($(this).hasClass('is-night')){
 			const person = {
-		    theme: "Dark"
+				theme: "Dark"
 			}
 			window.localStorage.setItem('user', JSON.stringify(person));
 		}
