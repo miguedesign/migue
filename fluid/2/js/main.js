@@ -1,5 +1,7 @@
 jQuery(document).ready(function($) {
 
+  
+
 	var owl = $('.owl-carousel');
       owl.owlCarousel({
         margin: 10,

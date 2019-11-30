@@ -211,14 +211,15 @@ a{
 .owl-dot span{
     display: block;
     background-color: var(--primary-color);
-    width: 30px;
+    width: 4px;
     height: 4px;
-    margin: 10px;
+    margin: 8px;
     opacity: .3;
     border-radius: 10px;
 }
 .owl-dot.active span{
     opacity: 1;
+    width: 20px;
 }
 
 
@@ -468,7 +469,9 @@ a{
         max-width: 200px;
         margin-top: 80px;
         margin-bottom: 140px;
+        max-height: 200px;
     }
+    
     .owl-dots{
         margin-top: 40px;
     }
