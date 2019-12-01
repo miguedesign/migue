@@ -45,20 +45,20 @@ jQuery(document).ready(function($) {
 
   // Change Default - Alt
   $('.toggleAlt').on('click', function(e){  
-    e.preventDefault();
+    e.preventDefault();  
     $(this).addClass('is-active').siblings().removeClass('is-active');
-
+  
     alt = $(this).attr('href');
-    console.log('click ' + alt);
-    $('.owl-default').toggleClass('is-active').toggleClass('is-hide');
-    $('.owl-alt').toggleClass('is-active').toggleClass('is-hide');
+    
     if(alt == '#Default'){
-      console.log('es defaulty');
       $('.features').removeClass('is-alt');
+      $('.owl-default').addClass('is-active');
+      $('.owl-alt').removeClass('is-active').addClass('is-hide');
     }
     else{
-      console.log('es alternativy ');
       $('.features').addClass('is-alt');
+      $('.owl-alt').addClass('is-active');
+      $('.owl-default').removeClass('is-active').addClass('is-hide');
     }
   });
   
