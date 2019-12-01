@@ -20,9 +20,7 @@ jQuery(document).ready(function($) {
 				theme: "Dark"
 			}
       window.localStorage.setItem('user', JSON.stringify(person));
-      $('.toggle-theme-img').attr('src', './img/moon.svg');
-      $('.hero-image-desk').attr('src', './img/fluid-img-light.png');
-      $('.hero-image-mobile').attr('src', './img/fluid-img-mobile-light.png');
+      changeSrc();
 		}
 		else{
       window.localStorage.removeItem('user');
@@ -32,12 +30,20 @@ jQuery(document).ready(function($) {
 		}
 
 	})
+  function changeSrc(){
+    
+    console.log('cambio de thema');
 
+    $('.toggle-theme-img').attr('src', './img/moon.svg');
+    $('.hero-image-desk').attr('src', './img/fluid-img-light.png');
+    $('.hero-image-mobile').attr('src', './img/fluid-img-mobile-light.png');
+  }
 	function render(user){
 		user = user;
 		if(user){
 			$('.toggle-dark').toggleClass('is-night');
-			$('body').toggleClass('Dark');
+      $('body').toggleClass('Dark');
+      changeSrc();
 		}
 	}
 
