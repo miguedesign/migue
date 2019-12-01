@@ -450,6 +450,29 @@ body.Dark .footer a{
 .toggle-dark.is-night{}
 
 
+/* Promotion */
+
+.promotion{
+    padding: 0 0 40px;
+    color: var(--light-color);
+}
+.promotion-content{
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--acent-color) 100%);
+}
+.promotion h3{
+    display:none;
+}
+.promotion p{
+    font-size: 16px;
+    display: inline-block;
+}
+.promotion span{
+    display: block ;
+    font-size: 12px;
+    margin-top: 10px;
+}
 @media only screen and (min-width:1000px){
     .mobile{
         display: none;
@@ -599,5 +622,25 @@ body.Dark .footer a{
     .toggle-dark:hover{
         opacity:.7;
         transform: scale(1.1);
+    }
+    .promotion-content{
+        padding: 10px 80px;
+    }
+    .promotion h3{
+        font-size: 16px;
+        font-weight: 800;
+        --family-primary: "Archivo Black";
+        display:  inline-block;
+        margin: 0;
+        max-width: 100px;
+        text-align: left;
+        vertical-align: middle;
+    }
+    .promotion p{
+        vertical-align: middle;
+        text-align: left;
+    }
+    .promotion span{
+        margin-top: 0;
     }
 }
