@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>sun</title>
+    <desc>Created with Sketch.</desc>
+    <g id="sun" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <line x1="24" y1="3" x2="24" y2="6" id="Line-2" stroke="#5B45FF" stroke-width="4" stroke-linecap="round"></line>
+        <line x1="37.7885822" y1="8.71141777" x2="37.7885822" y2="11.7114178" id="Line-2" stroke="#5B45FF" stroke-width="4" stroke-linecap="round" transform="translate(37.788582, 10.211418) rotate(45.000000) translate(-37.788582, -10.211418) "></line>
+        <line x1="43.5" y1="22.5" x2="43.5" y2="25.5" id="Line-2" stroke="#5B45FF" stroke-width="4" stroke-linecap="round" transform="translate(43.500000, 24.000000) rotate(90.000000) translate(-43.500000, -24.000000) "></line>
+        <line x1="37.7885822" y1="36.2885822" x2="37.7885822" y2="39.2885822" id="Line-2" stroke="#5B45FF" stroke-width="4" stroke-linecap="round" transform="translate(37.788582, 37.788582) rotate(135.000000) translate(-37.788582, -37.788582) "></line>
+        <line x1="24" y1="42" x2="24" y2="45" id="Line-2" stroke="#5B45FF" stroke-width="4" stroke-linecap="round" transform="translate(24.000000, 43.500000) rotate(180.000000) translate(-24.000000, -43.500000) "></line>
+        <line x1="10.2114178" y1="36.2885822" x2="10.2114178" y2="39.2885822" id="Line-2" stroke="#5B45FF" stroke-width="4" stroke-linecap="round" transform="translate(10.211418, 37.788582) rotate(225.000000) translate(-10.211418, -37.788582) "></line>
+        <line x1="4.5" y1="22.5" x2="4.5" y2="25.5" id="Line-2" stroke="#5B45FF" stroke-width="4" stroke-linecap="round" transform="translate(4.500000, 24.000000) rotate(270.000000) translate(-4.500000, -24.000000) "></line>
+        <line x1="10.2114178" y1="8.71141777" x2="10.2114178" y2="11.7114178" id="Line-2" stroke="#5B45FF" stroke-width="4" stroke-linecap="round" transform="translate(10.211418, 10.211418) rotate(315.000000) translate(-10.211418, -10.211418) "></line>
+        <circle id="Oval" fill="#5B45FF" cx="24" cy="24" r="14"></circle>
+    </g>
+</svg>

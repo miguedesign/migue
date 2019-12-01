@@ -2,6 +2,7 @@
     --dark-color: #23232A;
     --black-color: #000000;
     --light-color: #E1E7FE;
+    --white-color: #ffffff;
     --primary-color: #5B45FF;
     --acent-color: #FF0F77;
     --family-primary: "Archivo Black";
@@ -19,7 +20,8 @@ body{
 	margin:0;
 	padding: 0;
 	text-align: center;
-	font-size: 1em;
+    font-size: 1em;
+    transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 h1,h2,h3,h4{
@@ -69,7 +71,7 @@ a{
     line-height: 40px;
     background: linear-gradient(45deg, var(--primary-color) 0%, var(--acent-color) 100%);
     border-radius: 24px;
-    color: var(--light-color);
+    color: var(--white-color);
 }
 .hero{
     background: var(--dark-color);
@@ -124,46 +126,9 @@ a{
     display: inline-block;
     width: 100%;
     margin-top: 20px;
+    position: relative;
 }
 
-.toggle-dark{
-    border-radius:50%;
-	box-shadow:inset 0px 0px 0px 2px var(--dark-color);
-	display: none;
-	height:14px;
-	opacity:1;
-	overflow:hidden;
-	padding:0 !important;
-	position:relative;
-	transform:box-shadow .3s ease-in-out;
-    width:14px;
-}
-.toggle-dark span{
-    display: none;
-}
-.toggle-dark:after {
-    content:'';
-    display:block;
-    position:absolute;
-    width:100%;
-    transition:all .3s cubic-bezier(0.645, 0.045, 0.355, 1);
-    background-color: var(--dark-color);
-    left:0;
-    transform:translateX(-50%);
-    height:100%;
-    top:0;
-}
-.toggle-dark.is-night{
-    box-shadow:inset 0px 0px 0px 2px var(--light-color);
-}
-	
-.toggle-dark.is-night:after{
-    background-color:var(--light-color);
-	transform:translateX(50%);
-}
-.toggle-dark.is-night:after:hover{
-    opacity:.7;
-}
 
 
 .features{
@@ -251,8 +216,6 @@ a{
 }
 
 /* /change theme */
-
-
 
 
 
@@ -350,9 +313,8 @@ a{
     display: inline;
     border-radius: 25px;
     margin-bottom: 40px;
-    background: linear-gradient(-45deg, #000 0%, #07070A 100%);
-    box-shadow: -10px -10px 40px 0 rgba(35,35,42, .1), 20px 20px 40px 0 rgba(0,0,0, 0.5);
-    box-shadow: inset -3px -3px 5px 0 rgba(35,35,42, .1), inset 3px 4px 5px 0 rgba(0,0,0, 1);
+    border: solid 2px #33333C;
+    color: var(--light-color);
 }
 .get-option-title p{
     font-family: var(--family-second);
@@ -367,7 +329,7 @@ a{
     line-height: 56px;
     width: 100%;
     border-radius: 40px;
-    background-color: var(--primary-color);
+    background-color: #33333C;
     color: var(--light-color);
     padding: 0;
     border: none;
@@ -428,6 +390,64 @@ a{
 }
 
 
+/* Toggle theme */
+body.Dark{
+    /* background-color: orangered; */
+}
+body.Dark .hero{
+    background: linear-gradient(135deg, rgba(105,118,226, .3) 0%, rgba(206,211,255, .3) 100%);
+    color: var(--primary-color);
+}
+body.Dark .get{
+    background: linear-gradient(135deg, rgba(105,118,226, .6) 0%, rgba(206,211,255, .6) 100%);
+}
+body.Dark .get-title{
+    color: var(--primary-color);
+}
+body.Dark .get-preview{
+    border: solid 3px var(--primary-color);
+    color: var(--primary-color);
+}
+body.Dark .get-preview .get-items-list{
+    list-style-image: url(../img/icon-check-purple.svg);
+    color: var(--primary-color);
+}
+body.Dark .get-preview .button{
+    background-color: var(--primary-color);
+}
+
+body.Dark .example{
+    background: var(--primary-color);
+    background: linear-gradient(135deg, rgba(105,118,226, .6) 0%, rgba(206,211,255, .6) 100%);
+}
+body.Dark .example-title{
+    color: var(--primary-color);
+}
+
+
+body.Dark .footer{
+    background: var(--primary-color);
+    color: #9D93FB;
+}
+body.Dark .footer a{
+    color: #9D93FB;
+}
+.toggle-dark{
+    display: block;
+    border-radius:50%;
+	height: 24px;
+	opacity: 1;
+	padding: 12px;
+	position: relative;
+	width: 24px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.toggle-dark img{
+    width: 24px;
+}
+.toggle-dark.is-night{}
 
 
 @media only screen and (min-width:1000px){
@@ -557,8 +577,7 @@ a{
         min-height: 230px;
     }
     .get .button:hover{
-        opacity: .8;
-        box-shadow: 0 0 0 5px rgba(255,255,255, .2);
+        box-shadow: 0 0 0 8px rgba(255,255,255, .3);
     }
     
     .footer{
@@ -574,4 +593,11 @@ a{
     .footer a{
         color: var(--dark-color);
     }   
+    .toggle-dark{
+        transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+    .toggle-dark:hover{
+        opacity:.7;
+        transform: scale(1.1);
+    }
 }
