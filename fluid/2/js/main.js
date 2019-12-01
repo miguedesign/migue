@@ -26,7 +26,8 @@ jQuery(document).ready(function($) {
       loop: true,
       dots: true,
       autoplay: true,
-      autoplayTimeout: 3500,
+      autoplayHoverPause: true,
+      autoplayTimeout: 4500,
       responsive: {
         0: {
           items: 1

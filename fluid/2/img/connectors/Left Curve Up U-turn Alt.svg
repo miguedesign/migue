@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="212px" height="221px" viewBox="0 0 212 221" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="240px" height="240px" viewBox="0 0 240 240" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
     <title>Left Curve Up U-turn Alt</title>
     <desc>Created with Sketch.</desc>
@@ -7,8 +7,8 @@
         <circle id="path-1" cx="12" cy="12" r="8"></circle>
         <circle id="path-3" cx="10" cy="10" r="8"></circle>
     </defs>
-    <g id="Landing-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Flow/Left/Curve/Up/U-turn-Alt" transform="translate(2.000000, 11.000000)">
+    <g id="Left-Curve-Up-U-turn-Alt" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Flow/Left/Curve/Up/U-turn-Alt" transform="translate(30.000000, 30.000000)">
             <g id="_-Assets/End-point/interaction/tap-alt" transform="translate(150.000000, 150.000000)">
                 <circle id="fill" fill="#FF0F77" fill-rule="evenodd" cx="30" cy="30" r="30"></circle>
                 <g id="_-Assets/End-point/cap/circle" transform="translate(18.000000, 18.000000)">
