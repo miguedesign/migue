@@ -648,7 +648,8 @@ body.Dark .footer a{
 
 /*
 -----------------------------*/
-body.transparent{
+body.transparent,
+.Main.transparent{
     background: var(--dark-color);
     background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(35,35,42,1) 100%);
 }
