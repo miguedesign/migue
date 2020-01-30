@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="19px" viewBox="0 0 22 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>icon-twitter</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Lanidng-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Fluid---2020-[Circular]" transform="translate(-1345.000000, -67.000000)" fill="#FCFCFC">
+            <g id="Group-4" transform="translate(1332.000000, 52.000000)">
+                <g id="icon-twitter" transform="translate(13.000000, 15.000000)">
+                    <path d="M22,0.0526315789 C21.042385,0.763660428 19.9821079,1.30748342 18.86,1.66315789 C17.6263595,0.170039783 15.63837,-0.353563883 13.8820815,0.352056246 C12.125793,1.05767638 10.9748003,2.84242197 11,4.82105263 L11,5.87368421 C7.43066483,5.97110779 4.05202531,4.18102159 2,1.10526316 C2,1.10526316 -2,10.5789474 7,14.7894737 C4.94052756,16.2610172 2.48715691,16.998873 0,16.8947368 C9,22.1578947 20,16.8947368 20,4.78947368 C19.9990791,4.49626699 19.9722975,4.20378358 19.92,3.91578947 C20.9406031,2.85630851 21.6608274,1.51864504 22,0.0526315789 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

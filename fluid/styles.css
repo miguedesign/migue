@@ -1,0 +1,205 @@
+:root{
+  --dark-color: #191C24;
+  --black-color: #000000;
+  --light-color: #E1E7FE;
+  --white-color: #ffffff;
+  --primary-color: #5B45FF;
+  --acent-color: #FF0F77;
+  --family-primary: "CircularStd";
+  --family-second: "CircularStd";
+  --family-three: "Maison Neue";
+}
+
+@font-face {
+  font-family: "CircularStd";
+  src: url("./fonts/CircularStd-Black.eot");
+  src: url("./fonts/CircularStd-Black.eot?#iefix") format("embedded-opentype"), url("./fonts/CircularStd-Black.woff") format("woff"), url("./fonts/CircularStd-Black.ttf") format("truetype"), url("./fonts/CircularStd-Black.svg#bcc26993292869431e54c666aafa8fcd") format("svg");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("./fonts/CircularStd-Book.eot");
+  src: url("./fonts/CircularStd-Book.eot?#iefix") format("embedded-opentype"), url("./fonts/CircularStd-Book.woff") format("woff"), url("./fonts/CircularStd-Book.ttf") format("truetype"), url("./fonts/CircularStd-Book.svg#bcc26993292869431e54c666aafa8fcd") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Maison Neue';
+  src: url('./fonts/MaisonNeue-Light.woff2') format('woff2'),
+    url('./fonts/MaisonNeue-Light.woff') format('woff'),
+    url('./fonts/MaisonNeue-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+html{
+scroll-behavior: smooth;
+}
+
+body{
+  background: var(--dark-color);
+  color: var(--white-color);
+  display: block;
+  font-family: var(--family-second), sans-serif;
+  margin:0;
+  padding: 0;
+  text-align: center;
+  font-size: 1em;
+  transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+h1,h2,h3,h4{
+  display: inline-block;
+  margin: 1em;
+}
+
+img{
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  font-family: var(--family-second);
+  color: var(--white-color);
+  transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.main{
+  position: relative;
+}
+.header{
+  padding: 36px 0;
+  width: 100%;
+  display: table;
+}
+.header-sketch{
+  width: 50%;
+  display: table-cell;
+  text-align: left;
+  padding-left: 60px;
+}
+.header-sketch img{
+  width: 30px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.header-sketch p{
+  font-size: 16px;
+  line-height: 30px;
+  font-family: var(--family-second);
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+}
+.header-share{
+  text-align: right;
+  display: table-cell;
+  width: 50%;
+  padding-right: 60px;
+}
+
+.button{
+  background-color: var(--dark-color);
+  display: inline-block;
+  vertical-align: middle;
+  color: var(--light-color);
+  box-shadow: -5px -5px 10px 0 rgba(33,37,46,1),
+              5px 5px 10px 0 rgba(18,22,31,1);
+}
+.button.cta{
+  padding: 24px 0;
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.5px;
+  border-radius: 12px;
+  max-width: 400px;
+}
+.button.twitter{
+  width: 48px;
+  height: 48px;
+  opacity: .7;
+  border-radius: 50%;
+  border: solid thin #20242E;
+  background-image: url('./imgs/icon-twitter.svg');
+  background-size: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.button span{
+  display: none;
+}
+
+.link{
+  display: block;
+  max-width: 400px;
+  text-align: center;
+  line-height: 40px;
+  margin-top:20px;
+  font-family: var(--family-second);
+  opacity: .6;
+}
+
+
+.container{
+  display: table;
+}
+
+.about{
+  display: table-cell;
+  width: 36%;
+  padding: 50px;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.about-content{
+  padding-top:60px;
+  margin-bottom: 60px;
+}
+.about-title h1{
+  font-size: 80px;
+  line-height: 80px;
+  margin: 0;
+  font-family: var(--family-primary);
+  letter-spacing: -0.5px;
+}
+.about-description{
+  margin: 20px 0;
+}
+.about-description p{
+  font-family: var(--family-three);
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.3px;
+  font-weight: 100;
+}
+
+.content{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 4%;
+}
+.content img{
+  max-width: 760px;
+}
+
+@media only screen and (min-width:1000px){
+  .button.cta:hover{
+    color: var(--white-color);
+    box-shadow: -5px -5px 20px 0 rgba(33,37,46,1),
+                10px 10px 20px 0 rgba(18,22,31,1);
+  }
+  .button.twitter:hover{
+    opacity: 1;
+    box-shadow: -5px -5px 20px 0 rgba(33,37,46,1),
+                5px 5px 20px 0 rgba(18,22,31,1);
+  }
+  .link:hover{
+    opacity: 1;
+  }
+}
