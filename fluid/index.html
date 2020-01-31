@@ -71,9 +71,9 @@ gtag('config', 'UA-110999068-2', { 'optimize_id': 'GTM-W94G4KB'});
 					</div>
 					<div class="about-description">
 						<p>Fluid is a sketch library with +180 connectors to create user flows, diagrams, sitemaps and information architecture for mobile and web.</p>
-						<a href="#" class="button small openModal" id="example">Example</a>
-						<a href="#" class="button small openModal" id="connectors">Connectors</a>
-						<a href="#" class="button small openModal" id="architecture">Architecture</a>
+						<a href="#example" class="button small openModal">Example</a>
+						<a href="#connectors" class="button small openModal">Connectors</a>
+						<a href="#architecture" class="button small openModal">Architecture</a>
 					</div>
 				</section>
 				<footer class="about-footer">
@@ -90,13 +90,27 @@ gtag('config', 'UA-110999068-2', { 'optimize_id': 'GTM-W94G4KB'});
 
 	</main>
 
-	<section class="modal">
+	<section class="modal" id="modal">
 		<div class="modal-container">
-			<h2 class="modal-title">Look how easy it is</h2>
-			<video id="video" autoplay loop class="video" data-keepplaying muted preload playsinline poster="./imgs/example-fluid-poster.jpg">
-					<source src="./imgs/example-fluid.mp4" type="video/mp4" />
-			</video>
+			<div id="example" class="modal-content">
+				<h2 class="modal-title">Look how easy it is</h2>
+				<p>It was created in such a way that everyone can understand.</p>
+				<video id="video" loop class="video" data-keepplaying muted controls preload playsinline poster="./imgs/example-fluid-poster.jpg">
+						<source src="./imgs/example-fluid.mp4" type="video/mp4" />
+				</video>
+			</div>
+			<div id="connectors" class="modal-content">
+				<h2 class="modal-title">Create flows faster</h2>
+				<p>Fluid has multiple connectors in all directions and each with its alternative version named intuitively.</p>
+				<img src="./imgs/connectors.png" alt="">
+			</div>
+			<div id="architecture" class="modal-content">
+				<h2 class="modal-title">New Information architecture</h2>
+				<p>Enjoy a perfectly organized library to help you create user flow, diagrams and sitemaps quickly.</p>
+				<img src="./imgs/architecture.png" alt="">
+			</div>
 		</div>
+		<a href="#" class="button closeModal"><span>close</span></a>
 	</section>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

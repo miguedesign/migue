@@ -67,6 +67,34 @@ jQuery(document).ready(function($) {
   //     $('.owl-default').removeClass('is-active').addClass('is-hide');
   //   }
   // });
+
+
+  // Open Modal
+  $('.openModal').on('click', function(e){  
+    e.preventDefault();  
+    // $(this).addClass('is-active').siblings().removeClass('is-active');
+    alt = $(this).attr('href');
+    
+    $('#modal').addClass('is-open');
+
+    if(alt == '#example'){
+      $('#example').addClass('is-active');
+    }
+    else if(alt == '#connectors'){
+      $('#connectors').addClass('is-active');
+    }
+    else{
+      $('#architecture').addClass('is-active');
+    }
+  });
+  
+  $('.closeModal').on('click', function(e){  
+    e.preventDefault();  
+    $('#modal').removeClass('is-open');
+    $('#example').removeClass('is-active');
+    $('#connectors').removeClass('is-active');
+    $('#architecture').removeClass('is-active');
+  });
   
 
 
