@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="108px" height="49px" viewBox="0 0 108 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>arrow-straight-right</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="6.72" cy="6.72" r="6.4"></circle>
+        <circle id="path-3" cx="8" cy="8" r="6.4"></circle>
+    </defs>
+    <g id="Lanidng-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Flow/Right/Straight--[Dark]" transform="translate(24.000000, 0.000000)">
+            <g id="Flow/Right/Straight">
+                <g id="_-Assets/End-point/interaction/tap" transform="translate(-24.000000, 0.300000)">
+                    <circle id="fill" fill="#5B45FF" fill-rule="evenodd" cx="24" cy="24" r="24"></circle>
+                    <g id="_-Assets/End-point/cap/circle" transform="translate(17.280000, 17.280000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Oval" fill="#23232A" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+                <line x1="0" y1="24.3" x2="80" y2="24.3" id="path" stroke="#F6F6F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></line>
+                <g id="_-Assets/End-point/cap/arrow---Light" transform="translate(72.000000, 16.300000)" fill="#F6F6F6" fill-rule="evenodd">
+                    <path d="M11.3718586,8.67589648 L2.94537121,16.5276014 C2.62212171,16.8288016 2.1159052,16.8109271 1.814705,16.4876776 C1.67672226,16.3395939 1.6,16.144712 1.6,15.9423064 L1.6,0.238896567 C1.6,-0.202931233 1.9581722,-0.561103433 2.4,-0.561103433 C2.6024056,-0.561103433 2.79728748,-0.484381171 2.94537121,-0.346398435 L11.3718586,7.50530648 C11.6951081,7.80650668 11.7129826,8.31272319 11.4117824,8.63597269 C11.3989484,8.64974623 11.3856321,8.66306246 11.3718586,8.67589648 Z" id="Triangle"></path>
+                </g>
+                <g id="_-Assets/End-point/cap/circle---Light" transform="translate(0.000000, 24.300000) scale(-1, 1) translate(-0.000000, -24.300000) translate(-8.000000, 16.300000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use id="Oval" fill="#F6F6F6" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

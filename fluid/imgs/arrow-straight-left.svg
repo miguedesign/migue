@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="110px" height="49px" viewBox="0 0 110 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>arrow-straight-left</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="9.6" cy="9.6" r="6.4"></circle>
+        <circle id="path-3" cx="8" cy="8" r="6.4"></circle>
+    </defs>
+    <g id="Lanidng-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Flow/Left/Alt--[Dark]" transform="translate(6.000000, 0.000000)">
+            <g id="Flow/Left/Alt">
+                <g id="_-Assets/End-point/interaction/tap-alt" transform="translate(80.000000, 24.300000) scale(-1, 1) translate(-80.000000, -24.300000) translate(56.000000, 0.300000)">
+                    <circle id="fill" fill="#FF0F77" fill-rule="evenodd" cx="24" cy="24" r="24"></circle>
+                    <g id="_-Assets/End-point/cap/circle" transform="translate(14.400000, 14.400000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Oval" fill="#23232A" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+                <line x1="0" y1="24.3" x2="80" y2="24.3" id="Path" stroke="#F6F6F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4,8"></line>
+                <g id="_-Assets/End-point/cap/chevron---Light" transform="translate(0.000000, 24.300000) scale(-1, 1) translate(-0.000000, -24.300000) translate(-8.000000, 16.300000)" stroke="#F6F6F6" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.2">
+                    <polyline id="Path" transform="translate(5.188225, 8.000000) rotate(-315.000000) translate(-5.188225, -8.000000) " points="0.388225099 3.2 9.9882251 3.2 9.9882251 12.8"></polyline>
+                </g>
+                <g id="_-Assets/End-point/cap/circle---Light" transform="translate(72.000000, 16.300000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use id="Oval" fill="#F6F6F6" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

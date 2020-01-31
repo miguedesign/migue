@@ -5,6 +5,9 @@
   --white-color: #ffffff;
   --primary-color: #5B45FF;
   --acent-color: #FF0F77;
+  --shadow-light: rgba(48,51,59,1);
+  --shadow-dark: rgba(5,7,13,1);
+  --border-button: #292B33;
   --family-primary: "CircularStd";
   --family-second: "CircularStd";
   --family-three: "Maison Neue";
@@ -105,8 +108,8 @@ a{
   display: inline-block;
   vertical-align: middle;
   color: var(--light-color);
-  box-shadow: -5px -5px 10px 0 rgba(48,51,59,1),
-              5px 5px 10px 0 rgba(5,7,13,1);
+  box-shadow: -5px -5px 10px 0 var(--shadow-light),
+              5px 5px 10px 0 var(--shadow-dark);
 }
 .button.cta{
   padding: 24px 0;
@@ -115,15 +118,27 @@ a{
   font-size: 24px;
   line-height: 30px;
   letter-spacing: -0.5px;
-  border-radius: 12px;
+  border-radius: 16px;
   max-width: 400px;
+}
+.button.small{
+  padding: 8px 24px;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: .5px;
+  border-radius: 40px;
+  margin-right: 8px;
+  box-shadow: none;
+  border: solid 2px var(--border-button);
 }
 .button.twitter{
   width: 48px;
   height: 48px;
   opacity: .7;
   border-radius: 50%;
-  border: solid thin #20242E;
+  border: solid thin var(--border-button);
   background-image: url('./imgs/icon-twitter.svg');
   background-size: 24px;
   background-position: center;
@@ -193,6 +208,10 @@ a{
   max-width: 760px;
 }
 
+.modal{
+  display: none;
+}
+
 @media only screen and (min-width:1025px){
   .header-sketch{
     padding-left: 60px;
@@ -224,20 +243,61 @@ a{
     text-align: center;
     padding: 4%;
   }
-  .button.cta:hover{
-    color: var(--white-color);
-    box-shadow: -5px -5px 20px 0 rgba(33,37,46,1),
-                10px 10px 20px 0 rgba(18,22,31,1);
+  .button{
+    border: solid 2px transparent;
+    position: relative;
+    overflow: hidden;
+  }
+  .button.small:hover{
+    background-color: var(--border-button);
   }
   .button.twitter:hover{
     opacity: 1;
-    box-shadow: -5px -5px 20px 0 rgba(33,37,46,1),
-                5px 5px 20px 0 rgba(18,22,31,1);
   }
   .link:hover{
+    letter-spacing: .5px;
     opacity: 1;
   }
+
+  .button.cta{
+    color: var(--light-color);
+  }
+  .button.cta::before,
+  .button.cta::after{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    right: 0;
+    transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-repeat: no-repeat;
+    background-size: 60px;
+  }
+  .button.cta::before{
+    left: -100px;
+    background-position: 20px center;
+    background-image: url('./imgs/arrow-straight-right.svg');
+  }
+  .button.cta::after{
+    right: -100px;
+    background-position: 0 center;
+    background-image: url('./imgs/arrow-straight-left.svg');
+  }
+
+  .button.cta:hover{
+    color: var(--white-color);
+  }
+  .button.cta:hover::before{
+    left: 0;
+  }
+  .button.cta:hover::after{
+    right: 0;
+  }
 }
+
 @media only screen and (min-width:1400px){
   .header-sketch {
     padding-left: 6%;
