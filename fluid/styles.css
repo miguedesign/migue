@@ -193,21 +193,19 @@ a{
   max-width: 760px;
 }
 
-@media only screen and (min-width:1000px){
+@media only screen and (min-width:1025px){
   .header-sketch{
     padding-left: 60px;
   }
   .header-share{
     padding-right: 60px;
   }
-
-
   .container{
     display: table;
   }
   .about{
     display: table-cell;
-    width: 36%;
+    width: 40%;
     padding: 50px;
     vertical-align: middle;
     text-align: left;
@@ -239,4 +237,27 @@ a{
   .link:hover{
     opacity: 1;
   }
+}
+@media only screen and (min-width:1400px){
+  .header-sketch {
+    padding-left: 6%;
+  }
+  .header-share {
+    padding-right: 6%;
+  }
+  .about{
+    padding-left: 6%;
+    padding-right: 7%;
+  }
+  .about-content{
+    padding-top: 30%;
+  }
+  .content {
+    padding: 2%;
+  }
+  .content img{
+    max-width: 90%;
+  }
+  
+
 }
