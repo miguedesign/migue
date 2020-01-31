@@ -105,8 +105,8 @@ a{
   display: inline-block;
   vertical-align: middle;
   color: var(--light-color);
-  box-shadow: -5px -5px 10px 0 rgba(33,37,46,1),
-              5px 5px 10px 0 rgba(18,22,31,1);
+  box-shadow: -5px -5px 10px 0 rgba(48,51,59,1),
+              5px 5px 10px 0 rgba(5,7,13,1);
 }
 .button.cta{
   padding: 24px 0;
@@ -154,7 +154,7 @@ a{
 
 .about{
   width: 100%;
-  padding: 50px;
+  padding: 50px 30px;
   vertical-align: middle;
   text-align: left;
   order: 2;
