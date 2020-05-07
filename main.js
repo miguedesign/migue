@@ -15,7 +15,7 @@ jQuery(document).ready(function($) {
 	$(document).attr('title', pagetitles[pickpagetitle]);
 
 	//randomises messages
-	var pagemessages = ["Have a great day. 🙃", "🤔", "harder, better, faster, stronger 🤖", "Send me a tweet (@elnodos) and let's chat. 🙂"];
+	var pagemessages = ["Have you a great day. 🙃", "🤔", "harder, better, faster, stronger 🤖", "Send me a tweet (@elnodos) and let's chat. 🙂", "pixel usher"];
 	var pickmessage = Math.floor(Math.random()*pagemessages.length);
 	$('#Message').html(pagemessages[pickmessage]);
 
