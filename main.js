@@ -19,25 +19,10 @@ jQuery(document).ready(function($) {
 	var pickmessage = Math.floor(Math.random()*pagemessages.length);
 	$('#Message').html(pagemessages[pickmessage]);
 
-	$('.trigger').on('click', function(e){
-		e.preventDefault();
-		
-		$this = $(this);
-		trigger = $this.attr('href');
-		
-		if($this.hasClass('is-clicked')){
-			$this.removeClass('is-clicked');
-			$("#"+trigger).removeClass('is-show');
-		}
-		else{
-			$('.trigger').removeClass('is-clicked');
-			$('.content').removeClass('is-show');
-
-			$this.addClass('is-clicked');
-			$("#"+trigger).addClass('is-show');
-		}
-
-	});
+	//randomises bg-color
+	var pagebackground = ["acent", "black", "light"];
+	var pickbackground = Math.floor(Math.random()*pagebackground.length);
+	$('body').attr('class', pagebackground[pickbackground]);
 
 });
 

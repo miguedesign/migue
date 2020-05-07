@@ -1,30 +1,58 @@
+:root {
+	--acent-color:#305AFE;
+	--black-color:#02061D;
+	--gray-color:#6F7389;
+	--white-color:#fff;
+}
+
 html{
 	scroll-behavior: smooth;
 }
 body{
 	display: block;
-	font-family: "Archivo Black", sans-serif;
+	font-family: "Karla", sans-serif;
 	margin:0;
 	padding: 0;
 	text-align: center;
-	font-size: 1em;
-	line-height: 1.8em;
+	font-weight: normal;
 	transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 a{
-	color: #305AFE;
+	text-decoration: none;
+	transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .Main{}
+
 .Container{
-	max-width: 90%;
+	max-width: 80%;
 	margin: 0 auto;
 }
 
+.acent{
+	background: var(--acent-color);
+	color: var(--white-color);
+}
+.acent a{
+	color: var(--white-color);
+}
+.black{
+	background: var(--black-color);
+	color: var(--white-color);
+}
+.black a{
+	color: var(--white-color);
+}
+.light{
+	background: var(--white-color);
+	color: var(--black-color);
+}
+.light a{
+	color: var(--gray-color);
+}
+
 .Description{
-	background: #305AFE;
-	color: #fff;
 	text-align: left;
-	padding: 20px 0;
+	padding: 10vh 0;
 }
 
 .Description p{
@@ -34,94 +62,42 @@ a{
 	display: inline-block;
 	letter-spacing: -0.1px
 }
-.Description .Links{
-	margin-top: 40px;
-}
-.Description .link{
-	color: white;
-	padding: 0;
-}
+.Bio{}
 
-#Projects{
-	text-align: left;
-	padding: 70px 0;
-}
-.Projects{
-	padding-bottom: 80px;
-}
-.Projects_Title h2{
-	font-family: "Work sans", sans-serif;
-	font-size: 14px;
-	letter-spacing: 16px;
-	color: #6F7389;
-	text-transform: uppercase;
-}
-
-.Project{
-	border-bottom: solid 1px rgba(189, 192, 208, 0.3);
-	padding: 40px 0 60px;
-}
-.Project_Title{
-	font-family: "Archivo Black", sans-serif;
-	font-size: 32px;
-	line-height: 40px;
-	margin-bottom: 0;
-}
-.Project_Description p{
-	font-family: "Work sans", sans-serif;
-	font-size: 18px;
-	line-height: 32px;
-	color: #6F7389;
-}
-.Project_Description strong{
-	font-weight: 900;
-	color: #060B2C;
-}
-.Project_Link{
-	font-family: "Archivo Black", sans-serif;
-	font-size: 16px;
-	line-height: 19px;
-	margin-top: 40px;
+.Bio span{
 	display: block;
+	opacity: 0;
+	height: 0;
 }
-
-
-
 .Contact{
-	text-align: left;
-	padding: 40px 0;
-}
-.Contact h2{
-	font-size: 24px;
-	line-height: 40px;
+	padding: 0;
+	margin-bottom: 140px;
 }
 .Contact a{
-	color: inherit;
+	display: inline-block;
+	opacity: 1;
 }
 
 .Socials{
-	padding: 30px 0;
-	text-align: center;
-	font-family: "Work Sans", sans-serif;
-	background-color: #305AFE;
+	padding: 20px 0;
+	font-family: "Karla", sans-serif;
 }
 .Links{
-	font-family: "Work Sans", sans-serif;
+	font-family: "Karla", sans-serif;
 	list-style: none;
 	padding: 0;
 }
 .Links li{
 	display: inline-block;
 	width: 49%;
-	margin: 0 0 20px 0;
+	margin: 0
 }	
 .link{
-	text-decoration: none;
-	text-transform: uppercase;
 	font-size: 16px;
 	display: block;
-	padding: 5px 10px;
-	color: white;
+	padding: 10px 0;
+	text-decoration: none;
+	opacity: .5;
 }
 .link span{
 	display: none;
@@ -131,7 +107,7 @@ a{
 	padding: 10px 0;
 }
 #Message{
-	color: white;
+	opacity: .8;
 }
 
 .Link{
@@ -141,97 +117,64 @@ a{
 }
 
 @media only screen and (min-width:1200px){
-	body{
-		font-size: 2.5vw;
+	.Main{
+		display: table;
+		width: 100%;
+		height: 100vh;
+	}
+	.Description{
+		width: 100%;
+		padding: 0;
+		display: table-cell;
+		vertical-align: middle;
 	}
 	.Container{
 		max-width: 81.667vw;
 		margin: 0 auto;
 	}
-	.Description{
-		padding: 4.333vw 0;
+	.Bio{
+		margin-bottom: 40px;
 	}
-	.Description p{
-		font-size: 4.667vw;
-		line-height: 6.467vw;
-		margin: 0;
-	}
-	.Description .link:after{
-		background: white;
-	}
-	.Projects_Title{
+	.Bio span{
 		display: inline-block;
-		vertical-align: top;
-		width: 21.875vw;
-	}
-	.Projects_Title h2{
-		writing-mode: vertical-rl;
-		text-orientation: upright;
-		margin: 0;
-	}
-	.Projects_List{
-		display: inline-block;
-		width: calc(100% - 23.438vw);
-	}
-	.Project{
-		padding: 0 0 5.125vw 0;
-		margin-bottom: 6.250vw;
-	}
-	.Project_Title{
-		margin-top: 0;
+		opacity: 1;
+		height: initial;
 	}
 	.Contact{
-		padding: 3.125vw 0 3.125vw;
-	}
-	.Contact h2{
-		font-size: 3.750vw;
-		line-height: 6.250vw;
+		margin-bottom: 20px;
 	}
 	.Link:hover{
-		opacity: .6;
+		opacity: 1;
 	}
-
 	.Socials{
-		text-align: left;
-		padding: 0;
-	}
-	.Socials .Container{
 		position: relative;
+		padding: 0;
 	}
 	.Links{
 		display: inline-block;
 		margin-top: 0;
+		width: 49%;
 	}
 	.Links li{
 		display: inline-block;
 		width: auto;
 		margin: 0 10px 0 0;
 	}
-	.link{
-		font-size: 1.167vw; 
+	.link{ 
 		padding: 0;
 		margin: 0;
 		line-height: 1;
 		position: relative;
 	}
-	.link:after{
-		content: '';
-		display: block;
-		background: white;
-		width: 0px;
-		height: 1px;
-		transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-	}
-	.link:hover:after{
-		width: 100%;
+	.link:hover{
+		opacity: 1;
 	}
 	.Message{
 		display: inline-block;
+		padding: 0;
+		margin: 0;
+		text-align: right;
+		width: 50%;
 	}
-	#Message{
-		position: absolute;
-		font-size: 1.167vw;
-		right: 0;
-	}
-
+	
 }
