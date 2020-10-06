@@ -37,7 +37,7 @@ img{
 }
 
 .Container{
-	width: 80%;
+	width: 90%;
 	max-width: 1200px;
 	margin: 0 auto;
 }
@@ -94,13 +94,13 @@ img{
 .Title-content{
   display: inline-block;
   background-color: var(--white-color);
-  padding: 1px 60px;
+  padding: 1px 14px;
   position: relative;
   z-index: 10;
 }
 h2{
   margin: 5px auto 0;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 900;
 }
 
@@ -138,7 +138,7 @@ p{
   width: 90%;
   display: inline-block;
   text-align: left;
-  padding: 30px;
+  padding: 30px 10px;
 }
 
 
@@ -163,19 +163,22 @@ p{
   width: 100%;
 }
 .List-content{
-  padding: 40px;
+  padding: 10px;
 }
 
 ul{
   display: inline-block;
-  width: 40%;
+  width: 45%;
   vertical-align: top;
   text-align: left;
   list-style: none;
   padding-left: 0;
+  font-size: 14px;
 }
 ul p{
-  margin:0;
+  margin-top:0;
+  margin-bottom:6px;
+  font-size: 14px;
 }
 
 .Overlay{
@@ -191,12 +194,11 @@ ul p{
 }
 
 .Instructions{
-  left: -20px;
+  left: -10px;
 }
 
 .Instructions-content{
-  padding: 40px;
-
+  padding: 30px;
 }
 .Instructions ul{
   width: 100%;
@@ -206,8 +208,8 @@ ul p{
   text-align: left;
   max-width: 524px;
   position: absolute;
-  right: -20px;
-  top: 600px;
+  right: -10px;
+  top: 550px;
 }
 .Banner .Title .Title-content{
   display: none;
@@ -234,7 +236,7 @@ ul p{
   display: inline-block;
   position: fixed;
   bottom: 200px;
-  right: -75px;
+  right: -100px;
   transform: rotate(-90deg);
   background-color: var(--white-color);
   padding: 4px 20px;
@@ -253,6 +255,12 @@ ul p{
 @media only screen and (min-width:1000px){
   h1{
     font-size: 100px;
+  }
+  h2{
+    font-size: 20px;
+  }
+  .Title-content{
+    padding: 1px 60px;
   }
   .Hero-img{
     width: 49%;
@@ -279,6 +287,9 @@ ul p{
     position: absolute;
     left: 40px;
   }
+  .Instructions-content{
+    padding: 40px;
+  }
 
   .Banner{
     text-align: left;
@@ -288,7 +299,13 @@ ul p{
     top: 350px;
   }
 
+  .List-content{
+    padding: 40px;
+  }
 
+  ul p{
+    font-size: 16px;
+  }
 
 
   .Button:hover{
