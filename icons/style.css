@@ -106,7 +106,7 @@ h2{
 
 h1{
   display: inline-block;
-  font-size: 100px;
+  font-size: 60px;
   font-weight: 900;
   margin:0;
 }
@@ -123,20 +123,22 @@ p{
   font-size: 14px;
 }
 .Hero-img{
-  width: 49%;
+  width: 100%;
   display: inline-block;
   line-height: 0;
   vertical-align: middle;
   font-size: 0;
+  border-bottom: solid 1.5px var(--black-color);
 }
 .Hero-img img{
   max-width: 375px;
 }
 .Hero-description{
   vertical-align: middle;
-  width: 49%;
+  width: 90%;
   display: inline-block;
   text-align: left;
+  padding: 30px;
 }
 
 
@@ -144,6 +146,8 @@ p{
   display: inline-block;
   text-decoration: underline;
   color: var(--black-color);
+  position: relative;
+  background-color: var(--white-color);
 }
 
 .Button{
@@ -164,7 +168,7 @@ p{
 
 ul{
   display: inline-block;
-  width: 24%;
+  width: 40%;
   vertical-align: top;
   text-align: left;
   list-style: none;
@@ -176,7 +180,7 @@ ul p{
 
 .Overlay{
   position: relative;
-  min-height: 700px;
+  min-height: 1000px;
 }
 .Overlay h4{
   margin-bottom: 5px;
@@ -187,9 +191,7 @@ ul p{
 }
 
 .Instructions{
-  max-width: 800px;
-  position: absolute;
-  left: 40px;
+  left: -20px;
 }
 
 .Instructions-content{
@@ -204,8 +206,8 @@ ul p{
   text-align: left;
   max-width: 524px;
   position: absolute;
-  right: 40px;
-  top: 350px;
+  right: -20px;
+  top: 600px;
 }
 .Banner .Title .Title-content{
   display: none;
@@ -232,7 +234,7 @@ ul p{
   display: inline-block;
   position: fixed;
   bottom: 200px;
-  right: 0px;
+  right: -75px;
   transform: rotate(-90deg);
   background-color: var(--white-color);
   padding: 4px 20px;
@@ -248,10 +250,66 @@ ul p{
 }
 
 
-@media only screen and (min-width:1100px){
+@media only screen and (min-width:1000px){
+  h1{
+    font-size: 100px;
+  }
+  .Hero-img{
+    width: 49%;
+    border: none;
+  }
+  .Hero-img img{
+    max-width: 375px;
+  }
+  .Hero-description{
+    width: 49%;
+  }
+
+
+  .List ul{
+    width: 24%;
+  }
+
+  .Overlay{
+    min-height: 700px;
+  }
+
+  .Instructions{
+    max-width: 800px;
+    position: absolute;
+    left: 40px;
+  }
+
+  .Banner{
+    text-align: left;
+    max-width: 524px;
+    position: absolute;
+    right: 20px;
+    top: 350px;
+  }
+
+
+
+
   .Button:hover{
     box-shadow: 3px 3px 0 var(--black-color);
   }
+  .Link{
+    position: relative;
+    font-weight: 200;
+  }
+
+  .Share{
+    display: inline-block;
+    position: fixed;
+    bottom: 200px;
+    right: -20px;
+    transform: rotate(-90deg);
+    background-color: var(--white-color);
+    padding: 4px 20px;
+  }
+
+  .Link:after,
   .Share a:after{
     content: "";
     position: absolute;
@@ -262,6 +320,7 @@ ul p{
     background-color: var(--black-color);
     transition: width ease 0.4s;
   }
+  .Link:hover:after,
   .Share a:hover:after{
     width: 100%;
   }
