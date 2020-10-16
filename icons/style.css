@@ -344,9 +344,17 @@ p{
   text-decoration: none;
   position: relative;
 }
-
+.producthunt{
+  display: none;
+}
 
 @media only screen and (min-width:1000px){
+  .producthunt{
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    display: inline-block;
+  }
   h1{
     font-size: 100px;
   }
