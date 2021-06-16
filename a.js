@@ -11,8 +11,8 @@
 jQuery(document).ready(function($) {
 	
 	//randomises the page title from a small handful of uninteresting options
-	// var pagetitles = ["Migue", "Migue : @elnodos", "@elnodos", "Migue, hola!"];
-	// var pickpagetitle = Math.floor(Math.random()*pagetitles.length);
-	// $(document).attr('title', pagetitles[pickpagetitle]);
+	var pagetitles = ["Migue", "Migue : @elnodos", "@elnodos", "Migue, hola!"];
+	var pickpagetitle = Math.floor(Math.random()*pagetitles.length);
+	$(document).attr('title', pagetitles[pickpagetitle]);
 
 });
