@@ -368,21 +368,6 @@ p{
 }
 
 
-/* Linker Direct me
-_____________________________________________________ */
-
-.Directme{
-	text-align: left;
-	margin-bottom: var(--spacer-heavy);
-}
-
-.Directme li a{
-	display: inline-block;
-}
-
-
-
-
 
 .underline{
 	display: inline-block;
@@ -541,6 +526,26 @@ _____________________________________________________ */
 
 }
 
+
+
+
+/* Linker Direct me
+_____________________________________________________ */
+
+.Directme{
+	text-align: left;
+	margin-bottom: var(--spacer-heavy);
+}
+.Directme li{
+	margin-bottom: 20px;
+}
+
+.Directme li a{
+	font-size: 20px;
+}
+
+
+
 /* Wide Desktop
 _____________________________________________________ */
 @media only screen and (min-width:1440px){
@@ -566,6 +571,10 @@ _____________________________________________________ */
 	.Footer{
 		background-color: var(--col-dark);
 	}
+	.Description .underline {
+		color: var(--col-lighter);
+	}
+
 	.underline:hover {
     color: var(--col-white);
 	}
