@@ -8,8 +8,7 @@
 	--col-white:#fff;
 
 	
-	--font-size-tiny: 13px;
-    --font-size-tiny: 15px;
+	--font-size-tiny: 14px;
     --font-size-sm: 19px;
     --font-size-lg: 28px;
     --font-size-xl: 40px;
@@ -335,9 +334,7 @@ p{
 
 
 
-.Header{
-    /* background-color: royalblue; */
-}
+/* .Header{} */
 
 
 
@@ -359,7 +356,7 @@ p{
 	color: var(--col-black);
 	line-height: 40px;
 }
-.Nav a:hover{}
+/* .Nav a:hover{} */
 
 .Nav-logo{
 	font-size: var(--font-size-sm);
@@ -376,7 +373,7 @@ p{
 
 
 
-.Main{}
+/* .Main{} */
 
 .Hero, .Work{
     margin-top: var(--spacer);
@@ -420,16 +417,42 @@ p{
 
 .Footer{
 	display: inline-block;
-    display: none;
-	width: 100%;
+    width: 100%;
 	text-align: left;
-	padding: 24px 0;
-	background-color: var(--col-snow);
+	padding: var(--spacer-sm) 0;
+	background-color: var(--col-black);
+    color: var(--col-white);
 }
-.Footer-copy{
-	color: var(--col-gray);
-	font-size: var(--font-size-tiny);
-	line-height: var(--font-height-tiny);
+.Leave{
+    padding: var(--spacer-lg) 0;
+}
+.contact{
+    margin-top: var(--spacer-lg);
+    color: var(--col-gray);
+}
+.contact p{
+    margin: var(--spacer-sm) 0;
+}
+.Footer-copy {
+    font-size: var(--font-size-tiny);
+    line-height: var(--link-height-tiny);
+    border-top: solid 1px var(--col-gray);
+    padding: var(--spacer-lg) 0;
+}
+
+.Footer .Description{
+    max-width: 600px;
+    margin-top: var(--spacer-lg);
+}
+.Footer a{
+    color: var(--col-white);
+    line-height: var(--link-height-sm);
+}
+.Footer a:hover{
+    color: var(--col-silver);
+}
+.Footer .link:hover::after{
+    background-color: var(--col-silver);
 }
 .Footer-menu{
 	list-style: none;
@@ -441,9 +464,6 @@ p{
 	margin-bottom: var(--spacer);
 }
 .Footer-menu a{
-	color: var(--col-gray);
-	font-size: var(--font-size-tiny);
-	line-height: var(--font-height-tiny);
 	display: block;
 }
 
@@ -494,12 +514,10 @@ p{
 /* Tablet
 _____________________________________________________ */
 @media only screen and (min-width:768px){
-	body{
-		/* background-color: lightcoral; */
-	}
-	.col-small{ width: 19.444vw; }
+ 
+	.col-small{ width: 30vw;}
 	.col-middle{ width: 40.347vw; }
-	.col-large{ width: 61.111vw; }
+	.col-large{ width: 60vw;}
 	.col-full { width: 100%; }
 	
 	.no-mobile{
@@ -512,6 +530,10 @@ _____________________________________________________ */
     .Hero, .Work{
         margin-top: var(--spacer-lg);
     }
+    .Footer .Description{
+        margin-bottom: var(--spacer-xl);
+        margin-top: var(--spacer-0);
+    }
 
 }
 
@@ -522,13 +544,15 @@ _____________________________________________________ */
 @media only screen and (min-width:1200px){
 	body{
 		cursor: url(./Static/images/cursor.png) 8 8, auto;
-    cursor: -webkit-image-set( url(./Static/images/cursor.png) 1x, u/Static/images/cursor.pngcursor@2x-1.png) 2x ) 8 8, auto !important;
+        cursor: -webkit-image-set( url(./Static/images/cursor.png) 1x, url(./Static/images/cursor@2x.png) 2x ) 8 8, auto !important;
+	}
+    body a{
+		cursor: url(./Static/images/cursor-hover.png) 8 8, auto;
+        cursor: -webkit-image-set( url(./Static/images/cursor-hover.png) 1x, url(./Static/images/cursor-hover@2x.png) 2x ) 8 8, auto !important;
 	}
 
 	
-	.Header{
-		/* margin-bottom: var(--spacer-xl); */
-	}
+	/* .Header{} */
 
     .Hero, .Work{
         margin-top: var(--spacer-2xl);
@@ -547,18 +571,28 @@ _____________________________________________________ */
 	}
 
 	.Footer{
-		padding-top: var(--spacer-lg);
-		padding-bottom: var(--spacer-lg);
+		padding-top: var(--spacer-xl);
+		padding-bottom: var(--spacer-0);
 	}
-	.Footer-menu li{
+    
+    .Footer .col-large{
+        max-width: 610px;
+    }
+    
+    .Footer-copy{
+        margin-top: var(--spacer-lg);
+    }
+	.Footer-menu{
+        text-align: right;
+    }
+    .Footer-menu li{
 		display: inline-block;
 		margin:0 32px 0 0;
 	}
-	.Footer-menu a{
-		font-size: var(--font-size-tiny);
-		line-height: var(--font-height-tiny);
-	}
-
+    .Footer .col-large{
+        text-align: right;
+    }
+	
 	.Products-Item{
 		padding: var(--spacer-sm);
 	}
@@ -594,27 +628,29 @@ _____________________________________________________ */
 
 /* Wide Desktop
 _____________________________________________________ */
-@media only screen and (min-width:1440px){
-	.container{
-        width: 1600px;
-    }
-	.col-small{ width: 280px; }
-	.col-middle{ width: 581px; }
-	.col-large{ width: 880px; }
-	.col-full { 
-        /* width: 100%; */
-        max-width: 98vw;
-        margin: 0 auto;
-    }
+@media only screen and (min-width:1600px){
+	.container{ max-width: 1600px; }
+	.col-small{ width: 610px; }
+	.col-middle{ width: 50%;}
+	.col-large{ width: 926px; }
+	.col-full { max-width: 98vw; margin: 0 auto; }
+
+    .Leave{ padding-bottom: var(--spacer-3xl); }
+    .Footer-copy{ margin-top: var(--spacer-3xl); }
+    
 }
 
 
-@media (prefers-color-scheme: *dark*) {
+/* @media (prefers-color-scheme: dark) {
 	body{
 		background-color: var(--col-black);
 		color: var(--col-snow);
-		cursor: url(./Static/images/cursor-black.png) 8 8, auto;
-    cursor: -webkit-image-set( url(./Static/images/cursor-black.png) 1x, url(./Static/images/cursor-black@2x.png) 2x ) 8 8, auto !important;
+		cursor: url(./Static/images/cursor-dark.png) 8 8, auto;
+    cursor: -webkit-image-set( url(./Static/images/cursor-dark.png) 1x, url(./Static/images/cursor-dark@2x.png) 2x ) 8 8, auto !important;
+	}
+    body a{
+		cursor: url(./Static/images/cursor-dark-hover.png) 8 8, auto;
+        cursor: -webkit-image-set( url(./Static/images/cursor-dark-hover.png) 1x, url(./Static/images/cursor-dark-hover@2x.png) 2x ) 8 8, auto !important;
 	}
 
     ::selection {
@@ -650,4 +686,4 @@ _____________________________________________________ */
 		color: var(--col-gray);
 	}
 		
-}
+} */
