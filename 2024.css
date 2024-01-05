@@ -4,24 +4,22 @@
 	--col-black:#000;
 	--col-gray:#666;
     --col-silver:#A5A5B1;
+    --col-smoke:#E5E9F2;
 	--col-snow:#F9F9FD;
 	--col-white:#fff;
 
-	
 	--font-size-tiny: 14px;
     --font-size-sm: 19px;
     --font-size-lg: 28px;
     --font-size-xl: 40px;
     --font-size-2xl: 80px;
 
-	--link-height-tiny: 24px;
-    --link-height-sm: 30.4px;
-    --link-height-lg: 37px;
-    --link-height-xl: 50px;
-    --link-height-2xl: 128px;
+	--line-height-tiny: 24px;
+    --line-height-sm: 30.4px;
+    --line-height-lg: 37px;
+    --line-height-xl: 50px;
+    --line-height-2xl: 128px;
 	
-
-
 	--spacer-0: 0; 
     --spacer-tiny: 16px;
 	--spacer-sm: 24px;
@@ -33,11 +31,11 @@
 	
 
 	--transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --transition-2: all .3s ease-in-out;
 }
 
 
-/* Normalize
-_____________________________________________________ */
+/* ======================================= Normalize ======================================= */
 html,
 button,
 input,
@@ -51,6 +49,9 @@ body {
 h1,h2,h3,h4,h5,h6,p{
     margin: 0;
     font-weight: normal;
+}
+p{
+    margin-bottom: var(--spacer);
 }
 a:focus {
   outline: thin dotted;
@@ -98,8 +99,11 @@ pre {
   word-wrap: break-word;
 }
 
-/* Grid
-_____________________________________________________ */
+
+
+
+
+/* ======================================= Grid ======================================= */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -241,12 +245,11 @@ _____________________________________________________ */
 .col-small,
 .col-middle,
 .col-large,
-.col-full { width: 100%; }
+.col-full { width: 100%;}
 
 
 
-/* DESIGN
-_____________________________________________________ */
+/* ======================================= DESIGN ======================================= */
 ::selection {
     background: var(--col-black);
     color: var(--col-snow);
@@ -271,47 +274,47 @@ body{
     border-top: 2px var(--col-black) solid;
 }
 
-/* FONTS */
+/* ======================================= Fonts ======================================= */
 a{
 	text-decoration: none;
     color: var(--col-gray);
-	transition: var(--transition);
+	transition: var(--transition-2);
 }
 p{
 	font-size: var(--font-size-sm);
-    line-height: var(--link-height-sm);
+    line-height: var(--line-height-sm);
 }
 .Display{
     font-size: var(--font-size-2xl);
-    line-height: var(--link-height-2xl);
+    line-height: var(--line-height-2xl);
 }
 
 .Title{
     font-size: var(--font-size-xl);
-    line-height: var(--link-height-xl);
+    line-height: var(--line-height-xl);
 }
 
 .Subtitle{
     font-size: var(--font-size-lg);
-    line-height: var(--link-height-lg);
+    line-height: var(--line-height-lg);
 }
 
 .Caption{
     font-size: var(--font-size-mini);
-    line-height: var(--link-height-mini);
+    line-height: var(--line-height-mini);
     text-transform: uppercase;
     color: var(--col-silver);
 }
 
 
 
-/* LINKS */
+/* ======================================= Links ======================================= */
 .link{
 	display: inline-block;
 	position: relative;
 }
 .link:hover{
-	transition: all .3s ease-in-out;
+	transition: var(--transition-2);
 	color: var(--col-black);
 }
 .link::after{
@@ -319,10 +322,15 @@ p{
 	content: '';
 	background-color: var(--col-gray);
 	height: 1px;
-	transition: all .3s ease-in-out;
+	transition: var(--transition-2);
 	bottom: 0;
 	width: 0;
 	left: 0;
+}
+/* For links with underline visible */
+.link.underline::after{
+    width: 100%;
+    background-color: var(--col-silver);
 }
 .link:hover::after{
 	width: 100%;
@@ -334,10 +342,8 @@ p{
 
 
 
+/* ======================================= Header + Navbar ======================================= */
 /* .Header{} */
-
-
-
 
 .Nav{
 	padding: 40px 0;
@@ -372,33 +378,7 @@ p{
 }
 
 
-
-/* .Main{} */
-
-.Hero, .Work{
-    margin-top: var(--spacer);
-    margin-bottom: var(--spacer);
-}
-
-.Headline{
-	text-align: left;
-    margin-bottom: var(--spacer);
-}
-.Headline p{
-	color: var(--col-gray);
-}
-
-.Description{
-    margin-bottom: var(--spacer);
-	text-align: left;
-}
-.Contact{
-	text-align: left;
-    margin-bottom: var(--spacer);
-}
-
 .Menu{
-    text-align: left;
 }
 .Menu li{
     margin-left: var(--spacer-0) !important;
@@ -407,6 +387,135 @@ p{
 
 
 
+/* ======================================= Sections ======================================= */
+.Main{
+    text-align: left;
+}
+
+
+
+.Hero{
+    margin-top: var(--spacer);
+    margin-bottom: var(--spacer);
+}
+
+
+
+.Work{
+    margin-top: var(--spacer);
+    margin-bottom: var(--spacer);
+}
+
+
+
+.Side{
+    margin-bottom: var(--spacer);
+}
+.Side p{
+	color: var(--col-gray);
+}
+
+
+
+.Content{
+    margin-bottom: var(--spacer-xl);
+    display: inline-block;
+    text-align: left;
+}
+.Content a{
+    color: var(--col-black);
+}
+
+
+
+figure{
+    width: 100%;
+    display: inline-block;
+    margin: var(--spacer-0);
+}
+.image{
+    margin-bottom: var(--spacer);
+    text-align: right;
+}
+.image figcaption{
+    font-size: var(--font-size-tiny);
+    line-height: var(--line-height-tiny);
+    text-transform: uppercase;
+    color: var(--col-silver);
+}
+
+
+
+.video{
+    width: 100%;
+    position: relative;
+}
+.isPlaying{
+    padding-top: 56.25%;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+/* ======================================= Slider ======================================= */
+
+.Slider{
+    margin-bottom: var(--spacer-2xl);
+    text-align: left;
+}
+.Slider-content{}
+
+.Slides{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: var(--spacer);
+    margin-bottom: var(--spacer-tiny);
+}
+.Slides::-webkit-scrollbar {
+    height: 2px;
+}
+.Slides::-webkit-scrollbar-thumb {
+    background-color: var(--col-gray);
+    border-radius: 10px;
+}
+.Slides::-webkit-scrollbar-track {
+    background-color: var(--col-smoke);
+}
+
+.Slider-item{
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    margin-right: 50px;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: var(--transition-2);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Slider-item img{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: url(desaturate.svg#greyscale);
+    filter: rgb(143, 143, 143);
+    -webkit-filter: grayscale(1);
+    transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    max-height: 400px;
+}
 
 
 
@@ -415,6 +524,10 @@ p{
 
 
 
+
+
+
+/* ======================================= Footer ======================================= */
 .Footer{
 	display: inline-block;
     width: 100%;
@@ -423,30 +536,29 @@ p{
 	background-color: var(--col-black);
     color: var(--col-white);
 }
-.Leave{
+.Footer-Leave{
     padding: var(--spacer-lg) 0;
 }
-.contact{
+.Footer-Contact{
     margin-top: var(--spacer-lg);
     color: var(--col-gray);
 }
-.contact p{
+.Footer-Contact p{
     margin: var(--spacer-sm) 0;
 }
-.Footer-copy {
+.Footer-Copy {
     font-size: var(--font-size-tiny);
-    line-height: var(--link-height-tiny);
+    line-height: var(--line-height-tiny);
     border-top: solid 1px var(--col-gray);
     padding: var(--spacer-lg) 0;
 }
 
-.Footer .Description{
-    max-width: 600px;
+.Footer .Content{
     margin-top: var(--spacer-lg);
 }
 .Footer a{
     color: var(--col-white);
-    line-height: var(--link-height-sm);
+    line-height: var(--line-height-sm);
 }
 .Footer a:hover{
     color: var(--col-silver);
@@ -470,6 +582,14 @@ p{
 
 
 
+
+
+
+/* ------------------------- Modifier ------------------------- */
+.-limited{
+    max-width: 610px;
+}
+
 .no-mobile{
 	display: none;
 }
@@ -479,12 +599,22 @@ p{
 
 
 
+
+
+
+
+
+
+
 .Products{
 	display: inline-block;
 	width: 100%;
 	text-align: left;
 }
 
+
+
+/* 
 .Products-Item{
 	background: var(--col-white);
 	padding: var(--spacer-tiny);
@@ -506,18 +636,20 @@ p{
 	font-size: var(--font-size-tiny);
 	line-height: var(--font-height-tiny);
 	color: var(--col-gray);
-}
+} */
 
 
 
-
-/* Tablet
-_____________________________________________________ */
+/* ==============================================================================
+================================== Tablet ====================================== 
+=================================================================================*/
 @media only screen and (min-width:768px){
  
-	.col-small{ width: 30vw;}
+	/* .col-small{ width: 30vw;}
+	.col-large{ width: 60vw;} */
 	.col-middle{ width: 40.347vw; }
-	.col-large{ width: 60vw;}
+    .col-small{ width: 45%; }
+	.col-large{ width: 55%; }
 	.col-full { width: 100%; }
 	
 	.no-mobile{
@@ -527,20 +659,30 @@ _____________________________________________________ */
 		display: none;
 	}
 
+
+    .Hero{
+        margin-bottom: var(--spacer-xl);
+    }
+
     .Hero, .Work{
         margin-top: var(--spacer-lg);
     }
-    .Footer .Description{
+
+
+    .Footer .Content{
         margin-bottom: var(--spacer-xl);
         margin-top: var(--spacer-0);
     }
 
+
+
+
 }
 
 
-
-/* Desktop
-_____________________________________________________ */
+/* ==============================================================================
+================================== Desktop ====================================== 
+=================================================================================*/
 @media only screen and (min-width:1200px){
 	body{
 		cursor: url(./Static/images/cursor.png) 8 8, auto;
@@ -552,35 +694,54 @@ _____________________________________________________ */
 	}
 
 	
+    
 	/* .Header{} */
 
     .Hero, .Work{
         margin-top: var(--spacer-2xl);
     }
 
-	.Headline{
+	.Side{
         margin-bottom: var(--spacer-0);
 	}
 	
-	.Headline p{
+	.Side p{
 		font-size: var(--font-size-sm);
 		line-height: var(--font-height-sm);
 	}
-	.Description{
-		max-width: 610px;
-	}
+
+
+
+
+
+    .Slider-item{
+        width: auto;
+    }
+    .Slider-item img{
+        max-height: 600px;
+    }
+
+    .Slider-item img:hover{
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+        -moz-filter: grayscale(0);
+        -ms-filter: grayscale(0);
+        -o-filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+    }
+
+
+
 
 	.Footer{
 		padding-top: var(--spacer-xl);
 		padding-bottom: var(--spacer-0);
 	}
-    
-    .Footer .col-large{
-        max-width: 610px;
-    }
-    
-    .Footer-copy{
+    .Footer-Copy{
         margin-top: var(--spacer-lg);
+    }
+    .Footer .col-large{
+        text-align: right;
     }
 	.Footer-menu{
         text-align: right;
@@ -589,9 +750,10 @@ _____________________________________________________ */
 		display: inline-block;
 		margin:0 32px 0 0;
 	}
-    .Footer .col-large{
-        text-align: right;
-    }
+
+
+    
+
 	
 	.Products-Item{
 		padding: var(--spacer-sm);
@@ -612,7 +774,7 @@ _____________________________________________________ */
 /* Linker Direct me
 _____________________________________________________ */
 
-.Directme{
+/* .Directme{
 	text-align: left;
 	margin-bottom: var(--spacer-xl);
 }
@@ -622,21 +784,27 @@ _____________________________________________________ */
 
 .Directme li a{
 	font-size: 20px;
-}
+}  */
 
 
 
-/* Wide Desktop
-_____________________________________________________ */
+/* ==============================================================================
+================================== Wide Desktop ====================================== 
+=================================================================================*/
 @media only screen and (min-width:1600px){
 	.container{ max-width: 1600px; }
-	.col-small{ width: 610px; }
+	/* .col-small{ width: 610px; } */
 	.col-middle{ width: 50%;}
-	.col-large{ width: 926px; }
+	/* .col-large{ width: 926px; } */
 	.col-full { max-width: 98vw; margin: 0 auto; }
-
-    .Leave{ padding-bottom: var(--spacer-3xl); }
-    .Footer-copy{ margin-top: var(--spacer-3xl); }
+    
+    .Slider-content{
+        margin-left: calc(50% - 800px);
+    }
+    
+    
+    .Footer-Leave{ padding-bottom: var(--spacer-3xl); }
+    .Footer-Copy{ margin-top: var(--spacer-3xl); }
     
 }
 
