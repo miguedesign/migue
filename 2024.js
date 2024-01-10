@@ -24,7 +24,7 @@ jQuery(document).ready(function($) {
 		picNodos = Math.floor(Math.random()*pictureNodos.length),
 		$srcBase = $route+pictureNodos[picNodos]+".jpg";
 	
-	$picNodos.attr("src", $srcBase);
+	// $picNodos.attr("src", $srcBase);
 
 
 	//Remplace Youtube Video 

@@ -599,8 +599,22 @@ iframe{
 }
 
 
+.Thumbnail{}
+.Thumbnail-Img{
+    margin-bottom: var(--spacer-sm);
+}
+.Thumbnail-Content{
 
+}
+.Thumbnail-Title{
+    vertical-align: top;
+    display: inline-block;
 
+}
+.Thumbnail-Description{
+    vertical-align: top;
+    display: inline-block;
+}
 
 
 
@@ -751,6 +765,14 @@ iframe{
         margin-top: var(--spacer-lg);
     }
 
+    .Thumbnail-Title{
+        width: 25%;
+    
+    }
+    .Thumbnail-Description{
+        max-width: 74%;
+    }
+
 
     .Footer .Content{
         margin-bottom: var(--spacer-xl);
@@ -778,7 +800,7 @@ iframe{
 
 	
     .Section{
-        margin-bottom: var(--spacer-2xl);
+        margin-bottom: var(--spacer-xl);
     }
 
 
@@ -878,6 +900,7 @@ _____________________________________________________ */
 
 
 
+
 /* ==============================================================================
 ================================== Wide Desktop ====================================== 
 =================================================================================*/
@@ -887,6 +910,10 @@ _____________________________________________________ */
 	.col-middle{ width: 50%;}
 	/* .col-large{ width: 926px; } */
 	.col-full { max-width: 98vw; margin: 0 auto; }
+
+    .Section{
+        margin-bottom: var(--spacer-2xl);
+    }
     
     .Hero, .Work{
         margin-top: var(--spacer-2xl);
