@@ -2,6 +2,7 @@
     /* --col-acent:#305AFE; */
 	--col-acent:#FE2525;
 	--col-black:#000;
+	--col-night:#100E0E;
 	--col-gray:#666;
     --col-silver:#A5A5B1;
     --col-smoke:#E5E9F2;
@@ -305,6 +306,11 @@ p{
     text-transform: uppercase;
     color: var(--col-silver);
 }
+/* ======================================= Colors ======================================= */
+.c-Bold{color: var(--col-black);}
+.c-Subtle{color: var(--col-gray);}
+.c-Minimal{color: var(--col-silver);}
+
 
 
 
@@ -393,17 +399,21 @@ p{
 }
 
 
+.Section{
+    margin-bottom: var(--spacer-lg);
+}
+
 
 .Hero{
     margin-top: var(--spacer);
-    margin-bottom: var(--spacer);
 }
-
+.Hero .Content{
+    margin-bottom: var(--spacer-xl);
+}
 
 
 .Work{
     margin-top: var(--spacer);
-    margin-bottom: var(--spacer);
 }
 
 
@@ -418,12 +428,8 @@ p{
 
 
 .Content{
-    margin-bottom: var(--spacer-xl);
     display: inline-block;
     text-align: left;
-}
-.Content a{
-    color: var(--col-black);
 }
 
 
@@ -435,7 +441,6 @@ figure{
 }
 .image{
     margin-bottom: var(--spacer);
-    text-align: right;
 }
 .image figcaption{
     font-size: var(--font-size-tiny);
@@ -467,7 +472,6 @@ iframe{
 /* ======================================= Slider ======================================= */
 
 .Slider{
-    margin-bottom: var(--spacer-2xl);
     text-align: left;
 }
 .Slider-content{}
@@ -518,6 +522,81 @@ iframe{
 }
 
 
+
+.Experience-Item{
+    border-bottom: solid thin var(--col-silver);
+}
+
+.Experience-Item:first-child{
+    border-top: solid thin var(--col-silver);
+}
+
+.Experience-Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: var(--spacer) 0;
+    transition: var(--transition);
+    color: var(--col-black);
+}
+.Experience-Header:focus{
+    border: none;
+    outline: none;
+}
+.Experience-Header:hover .Experience-Toggle{
+    background-color: var(--col-smoke);
+}
+
+.Experience-Header p{
+    display: inline-block;
+    max-width: 40%;
+    margin: 0;
+}
+
+.Experience-Toggle{
+    width: 32px;
+    height: 32px;
+    display: block;
+    position: relative;
+    transition: var(--transition-2);
+    border-radius: 50%;
+}
+.Experience-Toggle::before{
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: var(--col-black);
+    top: calc(50% - 1px);
+    left: 25%;
+    content: '';
+}
+.Experience-Toggle::after{
+    position: absolute;
+    width: 2px;
+    transition: var(--transition);
+    height: 50%;
+    background-color: var(--col-black);
+    top: 25%;
+    left: calc(50% - 1px);
+    content: '';
+}
+.Experience-Header.isActive .Experience-Toggle::after{
+    height: 0;
+    top: 50%;
+}
+
+
+
+.Experience-Toggle span{
+    display: none;
+}
+
+
+.Experience-Content{
+    display: none;
+    margin-bottom: var(--spacer);
+}
 
 
 
@@ -660,8 +739,12 @@ iframe{
 	}
 
 
-    .Hero{
+    .Section{
         margin-bottom: var(--spacer-xl);
+    }
+
+    .Hero .Content{
+        margin-bottom: var(--spacer-0);
     }
 
     .Hero, .Work{
@@ -694,11 +777,18 @@ iframe{
 	}
 
 	
-    
+    .Section{
+        margin-bottom: var(--spacer-2xl);
+    }
+
+
 	/* .Header{} */
 
     .Hero, .Work{
-        margin-top: var(--spacer-2xl);
+        margin-top: var(--spacer-xl);
+    }
+    .Hero .Content{
+        margin-bottom: var(--spacer-0);
     }
 
 	.Side{
@@ -798,6 +888,10 @@ _____________________________________________________ */
 	/* .col-large{ width: 926px; } */
 	.col-full { max-width: 98vw; margin: 0 auto; }
     
+    .Hero, .Work{
+        margin-top: var(--spacer-2xl);
+    }
+
     .Slider-content{
         margin-left: calc(50% - 800px);
     }
@@ -808,8 +902,8 @@ _____________________________________________________ */
     
 }
 
-
-/* @media (prefers-color-scheme: dark) {
+/*
+ @media (prefers-color-scheme: dark) {
 	body{
 		background-color: var(--col-black);
 		color: var(--col-snow);
@@ -826,23 +920,43 @@ _____________________________________________________ */
         color: var(--col-black);
         font-weight: 100;
     }
+    
+    .c-Bold{color: var(--col-white);}
+    .c-Subtle{color: var(--col-gray);}
+    .c-Minimal{color: var(--col-silver);}
 
 	.Nav a{
 		color: var(--col-white);
 	}
 	.Footer{
-		background-color: var(--col-black);
+		background-color: var(--col-night);
 	}
 	.Description .link {
 		color: var(--col-snow);
 	}
-
-	.link:hover {
+    
+    .link {
+        color: var(--col-white);
+    }
+    .link:hover {
     color: var(--col-white);
 	}
 	.link:hover::after{
     background-color: var(--col-white);
 	}
+    
+    .Experience-Header{
+        color: var(--col-white);
+    }
+    .Experience-Header:hover .Experience-Toggle{
+        background-color: var(--col-gray);
+    }
+    .Experience-Toggle::before, .Experience-Toggle::after{
+        background-color: var(--col-white);
+    }
+
+
+
 
 	.Products-Item{
 		background-color: var(--col-black);
