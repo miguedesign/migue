@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Migue : @elnodos</title>
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="icon" href="../Static/images/favicon.png" sizes="32x32">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;400;500;700&display=swap" rel="stylesheet">
+	<meta name="description" content="Profile of Migue Martínez | Interaction Designer at frog, @elnodos">
+	<link rel="stylesheet" href="../2024.css">
+
+	<!-- twitter card -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="https://twitter.com/elnodos">
+	<meta name="twitter:title" content="Migue">
+	<meta name="twitter:description" content="Profile of Migue Martínez | Interaction Designer at frog Design, @elnodos">
+	<meta name="twitter:image" content="https://migue.design/thumbnail.jpg"/>    
+
+	<!-- Facebook Open Graph -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="Migue"/>
+	<meta property="og:description" content="Profile of Migue Martínez | Interaction Designer at frog Design, @elnodos"/>
+	<meta property="og:url" content="https://migue.design/"/>
+	<meta property="og:image" content="https://migue.design/thumbnail.jpg"/>
+
+	<meta name="google-site-verification" content="wMIyUjuSq4QfoHDRRCujY6CzYojTmFjja0JUsvfl41o" />
+
+<!-- 
+
+	Theme Name: Migue | Visual & Interaction Designer, @elnodos
+	Theme URI: https://migue.design
+	Author: Migue A.K.A Nodos
+	Author Contact: hello@migue.design
+	Copyright ©2024 Migue Martínez
+
+ -->
+
+
+</head>
+<body>
+	<main class="Main">
+		<section class="Security">
+			<div class="container">
+				<section class="row items-around items-middle">
+					<div class="col-full">
+						<div class="Content protected">
+							<div class="protected__alert" data-id="alert"><p>You entered the wrong password</p></div>
+							<div class="protected__content">
+								<h1 class="Subtitle">You need a password to continue</h1>
+								<input class="protected__content__input" data-id="password" type="password" placeholder="password"/>
+								<button data-id="button" type="button" class="protected__content__btn">Continue</button>
+							</div>
+							<p class="protected__request">Request password to <a href="mailto:hello@migue.design" class="link">hello@migue.design</a></p>
+						</div>
+					</div>	
+				</section>
+			</div>
+		</section>
+	</main>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-sha1/0.6.0/sha1.min.js"></script>
+        <script type="text/javascript">
+            "use strict"
+            var button = document.querySelectorAll('[data-id="button"]')
+            var password = document.querySelectorAll('[data-id="password"]')
+
+            function login(secret) {
+                var hash = sha1(secret)
+                var url = hash + "/index.html"
+                var alert = document.querySelectorAll('[data-id="alert"]')
+
+                var request = new XMLHttpRequest()
+                request.open('GET', url, true)
+
+                request.onload = function () {
+                    if (request.status >= 200 && request.status < 400) {
+                        window.location = url
+                    } else {
+                        parent.location.hash = hash
+                        alert[0].style.display = 'inline-block'
+                        password[0].setAttribute('placeholder', 'Incorrect password')
+                        password[0].value = ''
+                    }
+                }
+                request.onerror = function () {
+                    parent.location.hash = hash
+                    alert[0].style.display = 'inline-block'
+                    password[0].setAttribute('placeholder', 'Incorrect password')
+                    password[0].value = ''
+                }
+                request.send()
+            }
+
+            button[0].addEventListener("click", function () {
+                login(password[0].value)
+            })
+
+            document.onkeydown = function (e) {
+                e = e || window.event
+                if (e.keyCode == 13) {
+                    login(password[0].value)
+                }
+            }
+        </script>
+
+</body>
+</html>
+
