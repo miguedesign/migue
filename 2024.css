@@ -247,6 +247,7 @@ pre {
 .col-large,
 .col-full { width: 100%;}
 
+.col-2cols{ width: 49%;}
 
 
 /* ======================================= DESIGN ======================================= */
@@ -287,7 +288,7 @@ p{
     line-height: var(--line-height-sm);
 }
 .Display{
-    font-weight: 300;
+    /* font-weight: 300; */
     font-size: var(--font-size-2xl);
     line-height: var(--line-height-2xl);
 }
@@ -463,7 +464,7 @@ p{
     padding-top: var(--spacer);
 }
 .Hero .Content{
-    margin-bottom: var(--spacer-lg);
+    /* margin-bottom: var(--spacer); */
 }
 
 .Hero.Home{
@@ -560,6 +561,14 @@ p{
 .Content{
     display: inline-block;
     text-align: left;
+}
+
+.Content p:last-child{
+    margin-bottom: 0;
+}
+
+.Content.t-Center{
+    text-align: center;
 }
 
 
@@ -757,6 +766,7 @@ iframe{
 .Table tbody tr td:nth-child(2){
     padding-left: var(--spacer-sm);
 }
+
 
 
 
@@ -965,7 +975,7 @@ iframe{
 	.col-middle{ width: 40.347vw; }
     .col-small{ width: 45%; }
 	.col-large{ width: 55%; }
-	.col-full { max-width: 96%; }
+	.col-full { max-width: 100%; }
 
 	.no-mobile{
 		display: block !important;
@@ -1049,11 +1059,16 @@ iframe{
 		cursor: url(./Static/images/cursor-hover.png) 8 8, auto;
         cursor: -webkit-image-set( url(./Static/images/cursor-hover.png) 1x, url(./Static/images/cursor-hover@2x.png) 2x ) 8 8, auto !important;
 	}
+    
 
 
     .Section{
         padding-bottom: var(--spacer-xl);
     }
+
+    /* .Section.Hero{
+        padding-bottom: var(--spacer-lg);
+    } */
 
 
 	/* .Header{} */
@@ -1064,10 +1079,15 @@ iframe{
     }
 
     .Hero{
-        padding-top: var(--spacer-xl);
+        padding-top: var(--spacer-lg);
     }
     .Hero .Content{
         margin-bottom: var(--spacer-0);
+    }
+
+
+    .Case{
+        margin-top: var(--line-height-2xl);
     }
 
 	.Side{
@@ -1176,6 +1196,10 @@ _____________________________________________________ */
     }
     .container{ max-width: 1300px; }
 
+    /* .Section.Hero{
+        padding-bottom: var(--spacer-lg);
+    } */
+    
     .Hero.Home{
         padding-top: var(--spacer-xl);
         min-height: 86vh;
@@ -1204,6 +1228,10 @@ _____________________________________________________ */
     .Hero.Home{padding-top: var(--spacer-3xl);}
     .Hero{
         padding-top: var(--spacer-2xl);
+    }
+
+    .Case{
+        margin-top: var(--line-height-2xl);
     }
 
     .Slider-content{
