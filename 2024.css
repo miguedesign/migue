@@ -11,18 +11,19 @@
 	--col-white:#fff;
 
 	--font-size-tiny: 14px;
-    --font-size-sm: 19px;
+    --font-size-sm: 17px;
     --font-size-lg: 24px;
     --font-size-xl: 40px;
     --font-size-2xl: 50px;
 
 	--line-height-tiny: 24px;
-    --line-height-sm: 30.4px;
+    --line-height-sm: 28px;
     --line-height-lg: 32px;
-    --line-height-xl: 50px;
+    --line-height-xl: 56px;
     --line-height-2xl: 60px;
 
 	--spacer-0: 0;
+    --spacer-mini: 8px;
     --spacer-tiny: 16px;
 	--spacer-sm: 24px;
 	--spacer: 40px;
@@ -552,6 +553,11 @@ p{
 .Side{
     margin-bottom: var(--spacer);
 }
+
+.Side h1{
+    margin-bottom: var(--spacer);
+}
+
 .Side p{
 	color: var(--col-gray);
 }
@@ -579,7 +585,7 @@ figure{
     width: 100%;
 }
 .image{
-    margin-bottom: var(--spacer);
+    margin-bottom: var(--spacer-sm);
 }
 .image figcaption{
     color: var(--col-silver);
@@ -759,14 +765,26 @@ iframe{
 }
 
 
-.Table{
-    font-size: var(--font-size-tiny);
-    line-height: var(--line-height-tiny);
+.List{
+    padding: 0;
+    list-style: none;
+    margin-top: 0;
 }
-.Table tbody tr td:nth-child(2){
-    padding-left: var(--spacer-sm);
+.List li{
+    display: block;
+    margin-bottom: var(--spacer-mini);
 }
-
+.List p{
+    font-size: var(--font-size-tiny) !important;
+    line-height: var(--line-height-tiny) !important;
+    margin: 0;
+    color: var(--col-black)
+}
+.List span{
+    display: inline-block;
+    width: 100%;
+    color: var(--col-gray);
+}
 
 
 
@@ -969,10 +987,15 @@ iframe{
 ================================== Tablet ======================================
 =================================================================================*/
 @media only screen and (min-width:768px){
+    :root{
+        --font-size-sm: 19px;
+        
+        --line-height-sm: 30.5px;
+    }
 
 	/* .col-small{ width: 30vw;}
 	.col-large{ width: 60vw;} */
-	.col-middle{ width: 40.347vw; }
+	.col-middle{ width: 49%; }
     .col-small{ width: 45%; }
 	.col-large{ width: 55%; }
 	.col-full { max-width: 100%; }
@@ -1019,6 +1042,11 @@ iframe{
         margin-left: var(--spacer-tiny);
     }
 
+    .List span{
+        display: inline-block;
+        max-width: 160px;
+    }
+
 
 
     .Thumbnail-Title{
@@ -1028,6 +1056,7 @@ iframe{
     .Thumbnail-Description{
         max-width: 74%;
     }
+
 
 
     .Footer .Content{
@@ -1088,11 +1117,16 @@ iframe{
 
     .Case{
         margin-top: var(--line-height-2xl);
+        padding-top: var(--spacer-tiny);
     }
 
 	.Side{
         margin-bottom: var(--spacer-0);
 	}
+    .Side h1{
+        margin-bottom: var(--spacer-tiny);
+    }
+    
 
 	.Side p{
 		font-size: var(--font-size-sm);
@@ -1204,6 +1238,12 @@ _____________________________________________________ */
         padding-top: var(--spacer-xl);
         min-height: 86vh;
     }
+    .Side h1{
+        margin-bottom: var(--spacer-0);
+    }
+    .Case{
+        padding-top: var(--spacer-0);
+    }
 
     .Work-Item{
         padding: var(--spacer-lg) 0;
@@ -1269,6 +1309,7 @@ body.Dark a{
 .Dark .Footer.Home{border: none;background-color: var(--col-black); color: var(--col-snow);}
 .Dark .Footer.Home a{color: var(--col-snow);}
 .Dark .Description .link {color: var(--col-snow);}
+.Dark .List p{color: var(--col-smoke);}
 .Dark .Work-Item{ border-color: var(--col-stale);}
 .Dark .Work-Item-Icon{background-color: var(--col-white);}
 .Dark .Work-Item-Icon::before, .Dark .Work-Item-Icon::after{background-color: var(--col-white);}
