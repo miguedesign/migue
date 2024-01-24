@@ -916,7 +916,7 @@ iframe{
 
 
 
-
+/* ------------------------- Security ------------------------- */
 .Security{ background-color: var(--col-black); color: var(--col-white); }
 .Security .row{ min-height: 100vh; }
 
@@ -979,36 +979,7 @@ iframe{
 
 
 
-/*
 
-
-.Products{
-	display: inline-block;
-	width: 100%;
-	text-align: left;
-}
-.Products-Item{
-	background: var(--col-white);
-	padding: var(--spacer-tiny);
-	display: inline-block;
-	margin-bottom: var(--spacer-sm);
-}
-.Products-Item .category{
-	font-size: var(--font-size-tiny);
-	line-height: var(--font-height-tiny);
-	margin: 0;
-}
-.Products-Item h2{
-	font-size: var(--font-size-sm);
-	line-height: var(--font-height-tiny);
-	margin: 0;
-	color: var(--col-black);
-}
-.Products-Item p{
-	font-size: var(--font-size-tiny);
-	line-height: var(--font-height-tiny);
-	color: var(--col-gray);
-} */
 
 
 
@@ -1251,6 +1222,13 @@ iframe{
 		width: 100%;
 	}
 
+    .motionCoin{
+        height: 600px;
+    }
+    .Coin{
+        transform: scale(1.5);
+    }
+
 
 }
 
@@ -1363,3 +1341,121 @@ body.Dark a{
 .Dark .Experience-Header:hover .Experience-Toggle{background-color: var(--col-gray);}
 .Dark .Experience-Toggle::before, .Experience-Toggle::after{background-color: var(--col-white);}
 /* ======================== /DARK ======================== */
+
+
+
+
+
+
+/* ------------------------- Motion coin ------------------------- */
+.motionCoin{
+    background-color: #605DEC;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.Coin{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    
+}
+.Coin-credi{
+    width: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -40px;
+    animation: coin-jump 2000ms ease-in-out infinite;
+}
+.Coin-spark{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #FFFFFF;
+}
+.spark1{
+    top: 40px;
+    left: 40px;
+    background: url('./Static/images/case-study/coin/spark.svg') no-repeat center;
+    background-size: 20px;
+    animation: spark-opacity 4500ms ease-in-out infinite;
+}
+.spark2{
+    top: 70px;
+    left: 140px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    animation: spark-opacity 3500ms ease-in-out infinite;
+}
+.spark3{
+    border-radius: 50%;
+    top: 120px;
+    left: 50px;
+    width: 10px;
+    height: 10px;
+    animation: spark-opacity 5500ms ease-in-out infinite;
+}
+.Coin-shadow{
+    width: 70px;
+    height: 10px;
+    position: absolute;
+    background-color: rgba(51, 49, 113, 0.4);
+    bottom: 20px;
+    left: 50%;
+    margin-left: -35px;
+    border-radius: 50%;
+    animation: shadow-stresh 2000ms ease-in-out infinite;
+}
+
+@keyframes coin-jump {
+    0%{
+        transform: translateY(15px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(15px);
+    }
+}
+
+@keyframes shadow-stresh {
+    0%{
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.8);
+    }
+}
+
+@keyframes spark-opacity {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+
+/* -------------------------------------------------- */
+
+
