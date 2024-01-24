@@ -10,16 +10,16 @@
 	--col-snow:#F9F9FD;
 	--col-white:#fff;
 
-	--font-size-tiny: 14px;
+	--font-size-tiny: 15px;
     --font-size-sm: 17px;
-    --font-size-lg: 24px;
-    --font-size-xl: 40px;
+    --font-size-lg: 20px;
+    --font-size-xl: 36px;
     --font-size-2xl: 50px;
 
 	--line-height-tiny: 24px;
     --line-height-sm: 28px;
-    --line-height-lg: 32px;
-    --line-height-xl: 56px;
+    --line-height-lg: 28px;
+    --line-height-xl: 46px;
     --line-height-2xl: 60px;
 
 	--spacer-0: 0;
@@ -240,7 +240,8 @@ pre {
 
 .container{
 	margin: 0 auto;
-	max-width: 90vw;
+	width: 100%;
+    padding: 0 var(--spacer-sm);
 }
 
 .col-small,
@@ -377,7 +378,7 @@ p{
 
 .Nav-logo{
 	font-weight: 700;
-	font-size: var(--font-size-sm);
+	font-size: var(--font-size-lg);
 }
 .Nav-item{
 	font-weight: 400;
@@ -773,7 +774,7 @@ iframe{
 }
 .List li{
     display: block;
-    margin-bottom: var(--spacer-mini);
+    margin-bottom: var(--spacer-sm);
 }
 .List p{
     font-size: var(--font-size-tiny) !important;
@@ -788,7 +789,9 @@ iframe{
 }
 
 
-.Quote{}
+.Quote{
+    margin: var(--spacer-sm) var(--spacer-sm);
+}
 .Quote-Author{
     padding-top: var(--spacer);
 }
@@ -804,6 +807,10 @@ iframe{
     width: calc(100% - 80px);
     padding-left: 20px;
     vertical-align: top;
+}
+.Quote-Author-Name p{
+    font-size: var(--font-size-tiny);
+    line-height: var(--line-height-tiny);
 }
 .Quote p{
     margin-bottom: 0;
@@ -1009,18 +1016,11 @@ iframe{
 ================================== Tablet ======================================
 =================================================================================*/
 @media only screen and (min-width:768px){
-    :root{
-        --font-size-sm: 19px;
-        
-        --line-height-sm: 30.5px;
-    }
+    
 
-	/* .col-small{ width: 30vw;}
-	.col-large{ width: 60vw;} */
-	.col-middle{ width: 49%; }
-    .col-small{ width: 45%; }
-	.col-large{ width: 55%; }
-	.col-full { max-width: 100%; }
+	.container{
+        padding: 0 var(--spacer-lg);
+    }
 
 	.no-mobile{
 		display: block !important;
@@ -1064,6 +1064,9 @@ iframe{
         margin-left: var(--spacer-tiny);
     }
 
+    .List li{
+        margin-bottom: var(--spacer-mini);
+    }
     .List span{
         display: inline-block;
         max-width: 160px;
@@ -1100,9 +1103,29 @@ iframe{
 ================================== Desktop ======================================
 =================================================================================*/
 @media only screen and (min-width:1200px){
-    .col-small{ width: 33%; }
+    :root{
+        --font-size-sm: 19px;
+        --font-size-lg: 28px;
+        --font-size-xl: 40px;
+        --font-size-2xl: 56px;
+
+        
+        --line-height-sm: 32px;
+        --line-height-lg: 37px;
+        --line-height-xl: 50px;
+        --line-height-2xl: 60px;
+
+    }
+
+
+    .container{
+        padding: 0 var(--spacer);
+    }
+
+    .col-small{ width: 38%;}
 	.col-middle{ width: 49.5%;}
 	.col-large{ width: 60%;}
+    .col-full { max-width: 100%; }
 
     body{
         transition: all 1800ms;
@@ -1127,6 +1150,10 @@ iframe{
 
 
 	/* .Header{} */
+
+    .Nav-logo{
+        font-size: var(--font-size-sm);
+    }
 
     .Hero.Home{
         padding-top: var(--spacer-xl);
@@ -1248,17 +1275,13 @@ _____________________________________________________ */
 
 @media only screen and (min-width:1400px){
     :root {
-        --font-size-lg: 28px;
         --font-size-2xl: 80px;
-
-        --line-height-lg: 37px;
         --line-height-2xl: 128px;
     }
     .container{ max-width: 1300px; }
 
-    /* .Section.Hero{
-        padding-bottom: var(--spacer-lg);
-    } */
+    .col-small{ max-width: 620px;}
+    .col-large{ max-width: 700px;}
     
     .Hero.Home{
         padding-top: var(--spacer-xl);
@@ -1283,14 +1306,9 @@ _____________________________________________________ */
 =================================================================================*/
 @media only screen and (min-width:1600px){
 	.container{ max-width: 1600px; }
-	/* .col-small{ width: 610px; } */
 	.col-middle{ width: 49.5%;}
-	/* .col-large{ width: 926px; } */
-	.col-full { margin: 0 auto; max-width: 98vw; }
+	.col-full { margin: 0 auto; max-width: 100%; }
 
-    /* .Section{
-        margin-bottom: var(--spacer-2xl);
-    } */
     .Hero.Home{padding-top: var(--spacer-3xl);}
     .Hero{
         padding-top: var(--spacer-2xl);
@@ -1303,7 +1321,6 @@ _____________________________________________________ */
     .Slider-content{
         margin-left: calc(50% - 800px);
     }
-
 
     .Footer-Leave{ padding-bottom: var(--spacer-2xl); }
     .Footer-Copy{ margin-top: var(--spacer-3xl); }
