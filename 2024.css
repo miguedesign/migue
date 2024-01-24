@@ -306,8 +306,8 @@ p{
 
 .Caption{
     color: var(--col-silver);
-    font-size: var(--font-size-mini);
-    line-height: var(--line-height-mini);
+    font-size: var(--font-size-tiny);
+    line-height: var(--line-height-tiny);
     text-transform: uppercase;
 }
 /* ======================================= Colors ======================================= */
@@ -596,10 +596,11 @@ figure{
 
 
 
-.video{
+video ,.video{
     position: relative;
     width: 100%;
 }
+
 .isPlaying{
     padding-top: 56.25%;
 }
@@ -786,6 +787,27 @@ iframe{
     color: var(--col-gray);
 }
 
+
+.Quote{}
+.Quote-Author{
+    padding-top: var(--spacer);
+}
+.Quote-Author-img{
+    border-radius: 100%;
+    width: 56px;
+    height: 56px;
+    overflow: hidden;
+    display: inline-block;
+}
+.Quote-Author-Name{
+    display: inline-block;
+    width: calc(100% - 80px);
+    padding-left: 20px;
+    vertical-align: top;
+}
+.Quote p{
+    margin-bottom: 0;
+}
 
 
 /* ======================================= Footer ======================================= */
@@ -1078,6 +1100,10 @@ iframe{
 ================================== Desktop ======================================
 =================================================================================*/
 @media only screen and (min-width:1200px){
+    .col-small{ width: 33%; }
+	.col-middle{ width: 49.5%;}
+	.col-large{ width: 60%;}
+
     body{
         transition: all 1800ms;
 		cursor: url(./Static/images/cursor.png) 8 8, auto;
