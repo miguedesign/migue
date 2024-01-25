@@ -10,23 +10,6 @@
 
 jQuery(document).ready(function($) {
 	
-	//randomises the page title from a small handful of uninteresting options
-	var pagetitles = ["Migue", "Migue : @elnodos", "@elnodos", "Migue, hola!"];
-	var pickpagetitle = Math.floor(Math.random()*pagetitles.length);
-	
-	$(document).attr('title', pagetitles[pickpagetitle]);
-
-
-	//Random pictures by Nodos
-	var $picNodos = $('#pictureNodos'),
-		$route = '../Static/images/',
-		pictureNodos = ["migue@elnodos", "migue@elnodos2"],
-		picNodos = Math.floor(Math.random()*pictureNodos.length),
-		$srcBase = $route+pictureNodos[picNodos]+".jpg";
-	
-	// $picNodos.attr("src", $srcBase);
-
-
 	//Remplace Youtube Video 
     var $img = $('.coverDomestika');
 
@@ -59,16 +42,13 @@ jQuery(document).ready(function($) {
 		user = window.localStorage.getItem('user');
 		render(user);
 	}
-	
 	theme();
-
 
 	$('.btn-lightDark').on('click', function(e){
 		e.preventDefault();
 		$(this).toggleClass('is-night');
 		$('body').toggleClass('Dark');
 
-		
 		if($(this).hasClass('is-night')){
 			const person = {
 				theme: "Dark"
@@ -77,11 +57,10 @@ jQuery(document).ready(function($) {
 		}
 		else{
 			window.localStorage.removeItem('user');
-
 		}
 
 	})
-
+	
 	function render(user){
 		user = user;
 		if(user){

@@ -375,10 +375,76 @@ p{
 }
 /* .Nav a:hover{} */
 
+@keyframes bg-nodos {
+    0%{
+        background-image: url(./Static/images/nodos-ds.png);
+    }
+    80%{
+        background-image: url(./Static/images/nodos-ds.png);
+        background-position: -192px;
+    }
+    100%{
+        background-image: none;
+        background-position: -192px;
+    }
+}
+@keyframes bg-m {
+    0%{
+        opacity: 0;
+    }
+    81%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes showing {
+    0%{
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    81%{
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* Animation for fake-loader */
+.showing1{animation: showing 1200ms;}
+.showing2{animation: showing 1400ms;}
+.showing3{animation: showing 1600ms;}
+.showing4{animation: showing 1800ms;}
+.showing5{animation: showing 2000ms;}
+
+
+
+
 .Nav-logo{
 	font-weight: 700;
 	font-size: var(--font-size-lg);
+    width: 32px;
+    height: 32px;
+    background-size: 192px;
+    background-position: 0 0;
 }
+.Nav-logo.loader{
+    animation: bg-nodos 1.2s steps(6) 1;
+}
+
+.Nav-logo span { 
+    display: block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    transition: var(--transition-2);
+    animation: bg-m 1.4s;
+}
+
+
 .Nav-item{
 	font-weight: 400;
 	font-size: var(--font-size-tiny);
