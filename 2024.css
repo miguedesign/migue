@@ -309,7 +309,6 @@ p{
     color: var(--col-silver);
     font-size: var(--font-size-tiny);
     line-height: var(--line-height-tiny);
-    text-transform: uppercase;
 }
 /* ======================================= Colors ======================================= */
 .c-Bold{color: var(--col-black);}
@@ -458,9 +457,10 @@ p{
     padding-bottom: var(--spacer-lg);
 }
 .Section.Last .container{
-    border-top: solid thin var(--col-gray);
     padding-top: var(--spacer-2xl);
+    border-top: solid thin var(--col-gray);
 }
+
 
 .Hero{
     padding-top: var(--spacer);
@@ -589,10 +589,9 @@ figure{
     margin-bottom: var(--spacer-sm);
 }
 .image figcaption{
-    color: var(--col-silver);
+    color: var(--col-gray);
     font-size: var(--font-size-tiny);
     line-height: var(--line-height-tiny);
-    text-transform: uppercase;
 }
 
 
@@ -890,9 +889,6 @@ iframe{
 .Footer-menu li{
 	display: block;
 	margin-bottom: var(--spacer);
-}
-.Footer-menu a{
-	display: block;
 }
 
 
@@ -1326,7 +1322,7 @@ body.Dark a{
 .Dark .c-Minimal{color: var(--col-silver);}
 .Dark Nav,.Dark .Main{background-color: var(--col-black);}
 .Dark .Nav a{color: var(--col-white);}
-.Dark .Footer{border-top: solid 1px var(--col-silver); background-color: var(--col-black);}
+.Dark .Footer{border-top: solid 1px var(--col-night); background-color: var(--col-night);}
 .Dark .Footer.Home{border: none;background-color: var(--col-black); color: var(--col-snow);}
 .Dark .Footer.Home a{color: var(--col-snow);}
 .Dark .Description .link {color: var(--col-snow);}
