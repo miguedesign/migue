@@ -1462,7 +1462,7 @@ body.Dark a{
 .spark1{
     top: 40px;
     left: 40px;
-    background: url('./Static/images/case-study/coin/spark.svg') no-repeat center;
+    background: url('./Static/images/case-study/credilikeme/coin/spark.svg') no-repeat center;
     background-size: 20px;
     animation: spark-opacity 4500ms ease-in-out infinite;
 }
