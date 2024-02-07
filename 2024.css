@@ -862,18 +862,18 @@ iframe{
 .List li{
     display: block;
 }
-/*
+
 .List p{
     font-size: var(--font-size-tiny) !important;
     line-height: var(--line-height-tiny) !important;
-    margin: 0;
+    margin: 0 0 var(--spacer-sm) 0;
     color: var(--col-black)
 }
 .List span{
     display: inline-block;
     width: 100%;
     color: var(--col-gray);
-} */
+}
 
 
 .Quote{
@@ -1119,6 +1119,13 @@ iframe{
         margin-left: var(--spacer-tiny);
     }
 
+    .List span{
+        width: 120px;
+    }
+    .List p{
+        margin-bottom: var(--spacer-mini);
+    }
+
 
 
     .Thumbnail-Title{
@@ -1347,6 +1354,7 @@ _____________________________________________________ */
     .Case{
         padding-top: var(--spacer-0);
     }
+   
 
     .Work-Item{
         padding: var(--spacer-lg) 0;
