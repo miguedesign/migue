@@ -12,7 +12,7 @@
 
 	--font-size-tiny: 15px;
     --font-size-sm: 17px;
-    --font-size-lg: 20px;
+    --font-size-lg: 24px;
     --font-size-xl: 36px;
     --font-size-2xl: 50px;
 
@@ -306,10 +306,12 @@ p{
 }
 
 .Caption{
-    color: var(--col-silver);
+    color: var(--col-gray);
     font-size: var(--font-size-tiny);
     line-height: var(--line-height-tiny);
 }
+
+
 /* ======================================= Colors ======================================= */
 .c-Bold{color: var(--col-black);}
 .c-Subtle{color: var(--col-gray);}
@@ -701,7 +703,9 @@ iframe{
 .Slider{
     text-align: left;
 }
-.Slider-content{}
+.Slider-content{
+    padding: 0 0 0 var(--spacer-sm);
+}
 
 .Slides{
     -webkit-overflow-scrolling: touch;
@@ -736,6 +740,10 @@ iframe{
     scroll-snap-align: start;
 }
 .Slider-item img{
+    max-height: 400px;
+}
+
+.img-grayscale{
     filter: grayscale(100%);
     filter: url(desaturate.svg#greyscale);
     filter: rgb(143, 143, 143);
@@ -745,7 +753,6 @@ iframe{
     -o-filter: grayscale(100%);
     -webkit-filter: grayscale(1);
     transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    max-height: 400px;
 }
 
 
@@ -854,8 +861,8 @@ iframe{
 }
 .List li{
     display: block;
-    margin-bottom: var(--spacer-sm);
 }
+/*
 .List p{
     font-size: var(--font-size-tiny) !important;
     line-height: var(--line-height-tiny) !important;
@@ -866,7 +873,7 @@ iframe{
     display: inline-block;
     width: 100%;
     color: var(--col-gray);
-}
+} */
 
 
 .Quote{
@@ -1112,14 +1119,6 @@ iframe{
         margin-left: var(--spacer-tiny);
     }
 
-    .List li{
-        margin-bottom: var(--spacer-mini);
-    }
-    .List span{
-        display: inline-block;
-        max-width: 160px;
-    }
-
 
 
     .Thumbnail-Title{
@@ -1245,7 +1244,7 @@ iframe{
         max-height: 600px;
     }
 
-    .Slider-item img:hover{
+    .img-grayscale:hover{
         -webkit-filter: grayscale(0);
         -moz-filter: grayscale(0);
         -ms-filter: grayscale(0);
@@ -1378,7 +1377,8 @@ _____________________________________________________ */
     }
 
     .Slider-content{
-        margin-left: calc(50% - 800px);
+        margin-left: calc(50% - 750px);
+        padding: 0;
     }
 
     .Footer-Leave{ padding-bottom: var(--spacer-2xl); }
@@ -1421,7 +1421,7 @@ body.Dark a{
 .Dark .link:hover::after{ background-color: var(--col-white); }
 .Dark .Experience-Header{color: var(--col-white);}
 .Dark .Experience-Header:hover .Experience-Toggle{background-color: var(--col-gray);}
-.Dark .Experience-Toggle::before, .Experience-Toggle::after{background-color: var(--col-white);}
+.Dark .Experience-Toggle::before, .Dark .Experience-Toggle::after{background-color: var(--col-white);}
 /* ======================== /DARK ======================== */
 
 
