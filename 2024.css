@@ -316,6 +316,7 @@ p{
 .c-Bold{color: var(--col-black);}
 .c-Subtle{color: var(--col-gray);}
 .c-Minimal{color: var(--col-silver);}
+.b-Invert{background-color: var(--col-black);}
 
 
 
@@ -653,9 +654,9 @@ p{
     text-align: left;
 }
 
-.Content p:last-child{
+/* .Content p:last-child{
     margin-bottom: 0;
-}
+} */
 
 .Content.t-Center{
     text-align: center;
@@ -875,6 +876,21 @@ iframe{
     color: var(--col-gray);
 }
 
+
+
+.Table-List{
+    font-size: var(--font-size-tiny) !important;
+    line-height: var(--line-height-tiny) !important;
+    margin: 0 0 var(--spacer-sm) 0;
+    color: var(--col-black);
+}
+.Table-List td {
+    min-width: 120px;
+    display: inline-block;
+}
+.Table-List td:nth-child(2){
+    color: var(--col-gray);
+}
 
 .Quote{
     margin: var(--spacer-sm) var(--spacer-sm);
@@ -1120,7 +1136,7 @@ iframe{
     }
 
     .List span{
-        width: 120px;
+        width: 180px;
     }
     .List p{
         margin-bottom: var(--spacer-mini);
@@ -1413,6 +1429,7 @@ body.Dark a{
 .Dark .c-Bold{color: var(--col-white);}
 .Dark .c-Subtle{color: var(--col-gray);}
 .Dark .c-Minimal{color: var(--col-silver);}
+.Dark .b-Invert{color: var(--col-snow);}
 .Dark Nav,.Dark .Main{background-color: var(--col-black);}
 .Dark .Nav a{color: var(--col-white);}
 .Dark .Nav-logo.loader{animation: bg-nodos-dark 1.2s steps(6) 1;}
