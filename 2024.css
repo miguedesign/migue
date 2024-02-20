@@ -1429,7 +1429,7 @@ body.Dark a{
 .Dark .c-Bold{color: var(--col-white);}
 .Dark .c-Subtle{color: var(--col-gray);}
 .Dark .c-Minimal{color: var(--col-silver);}
-.Dark .b-Invert{color: var(--col-snow);}
+.Dark .b-Invert{background-color: var(--col-snow);}
 .Dark Nav,.Dark .Main{background-color: var(--col-black);}
 .Dark .Nav a{color: var(--col-white);}
 .Dark .Nav-logo.loader{animation: bg-nodos-dark 1.2s steps(6) 1;}
