@@ -541,7 +541,7 @@ p{
     padding-bottom: var(--spacer-lg);
 }
 .Section.Last .container{
-    padding-top: var(--spacer-2xl);
+    padding-top: var(--spacer-xl);
     border-top: solid thin var(--col-gray);
 }
 
@@ -1355,7 +1355,11 @@ _____________________________________________________ */
         --font-size-2xl: 60px;
         --line-height-2xl: 100px;
     }
-    .container{ max-width: 1300px; }
+    .container{
+        max-width: 1300px; 
+        padding: 0;
+    }
+    
 
     .col-small{ max-width: 620px;}
     .col-large{ max-width: 700px;}
