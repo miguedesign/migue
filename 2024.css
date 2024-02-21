@@ -753,7 +753,8 @@ iframe{
     scroll-snap-align: start;
 }
 .Slider-item img{
-    max-height: 400px;
+    width: auto;
+    height: 340px;
 }
 
 .img-grayscale{
@@ -1169,6 +1170,11 @@ iframe{
         margin-left: var(--spacer-tiny);
     }
 
+    .Slider-item img{
+        width: auto;
+        height: 440px;
+    }
+
     .List span{
         width: 180px;
     }
@@ -1297,7 +1303,8 @@ iframe{
         width: auto;
     }
     .Slider-item img{
-        max-height: 600px;
+        height: 600px;
+        background-color: red;
     }
 
     .img-grayscale:hover{
