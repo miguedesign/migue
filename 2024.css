@@ -6,7 +6,7 @@
     --col-stale:#585656;
 	--col-gray:#758193;
     --col-silver:#A5A5B1;
-    --col-smoke:#DADFEC;
+    --col-smoke:#EBEDF4;
 	--col-snow:#F9F9FD;
 	--col-white:#fff;
 
@@ -1025,7 +1025,7 @@ iframe{
 
 /* ------------------------- Modifier ------------------------- */
 .-limited{
-    max-width: 610px;
+    max-width: 740px;
 }
 
 .no-mobile{
@@ -1361,7 +1361,6 @@ _____________________________________________________ */
     
 
     .col-small{ max-width: 620px;}
-    .col-large{ max-width: 700px;}
     
     .Hero.Home{
         padding-top: var(--spacer-xl);
