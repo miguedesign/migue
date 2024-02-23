@@ -459,6 +459,9 @@ p{
 .showing5{animation: showing 1400ms;}
 .showing6{animation: showing 1600ms;}
 .showing7{animation: showing 1800ms;}
+.showing8{animation: showing 2000ms;}
+.showing9{animation: showing 2200ms;}
+.showing10{animation: showing 2400ms;}
 
 
 
@@ -827,9 +830,8 @@ iframe{
 .Thumbnail-Img{
     margin-bottom: var(--spacer-sm);
 }
-.Thumbnail-Content{
+.Thumbnail-Content{}
 
-}
 .Thumbnail-Title{
     display: inline-block;
     vertical-align: top;
@@ -1110,9 +1112,6 @@ iframe{
     }
 
 
-    .Work-Item:nth-child(2n+1){ padding-right: var(--spacer-sm); }
-    .Work-Item:nth-child(2n+2){ padding-left: var(--spacer-sm); }
-    
 
     .Slider-item img{
         width: auto;
@@ -1212,10 +1211,11 @@ iframe{
     }
 
 
-    .Case{
-        margin-top: var(--line-height-2xl);
-        padding-top: var(--spacer-tiny);
-    }
+
+    .Work-Item:nth-child(2n+1){ padding-right: var(--spacer-sm); }
+    .Work-Item:nth-child(2n+2){ padding-left: var(--spacer-sm); }
+    
+
 
 	.Side{
         margin-bottom: var(--spacer-0);
@@ -1290,22 +1290,6 @@ iframe{
 
 
 
-/* Linker Direct me
-_____________________________________________________ */
-
-/* .Directme{
-	text-align: left;
-	margin-bottom: var(--spacer-xl);
-}
-.Directme li{
-	margin-bottom: 20px;
-}
-
-.Directme li a{
-	font-size: 20px;
-}  */
-
-
 @media only screen and (min-width:1400px){
     :root {
         --font-size-2xl: 60px;
@@ -1325,14 +1309,8 @@ _____________________________________________________ */
     .Side h1{
         margin-bottom: var(--spacer-0);
     }
-    .Case{
-        padding-top: var(--spacer-0);
-    }
+    
    
-/* 
-    .Work-Item{
-        padding: var(--spacer-lg) 0;
-    } */
 }
 
 
@@ -1354,10 +1332,7 @@ _____________________________________________________ */
         padding-top: var(--spacer-2xl);
     }
 
-    .Case{
-        margin-top: var(--line-height-2xl);
-    }
-
+    
     .Slider-content{
         margin-left: calc(50% - 750px);
         padding: 0;
@@ -1402,6 +1377,7 @@ body.Dark a{
 .Dark .Experience-Header{color: var(--col-white);}
 .Dark .Experience-Header:hover .Experience-Toggle{background-color: var(--col-gray);}
 .Dark .Experience-Toggle::before, .Dark .Experience-Toggle::after{background-color: var(--col-white);}
+.Dark .Work-Item .image{background-color: var(--col-black);}
 /* ======================== /DARK ======================== */
 
 
