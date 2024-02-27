@@ -41,6 +41,7 @@ jQuery(document).ready(function($) {
 	function theme(){
 		user = window.localStorage.getItem('user');
 		render(user);
+		renderImg();
 	}
 	theme();
 
@@ -58,6 +59,7 @@ jQuery(document).ready(function($) {
 		else{
 			window.localStorage.removeItem('user');
 		}
+		renderImg();
 
 	})
 	
@@ -68,6 +70,18 @@ jQuery(document).ready(function($) {
 			$('body').toggleClass('Dark');
 		}
 	}
+
+	function renderImg(){
+		body = $('body');
+	
+		if(body.hasClass('Dark')){
+			$(".toolkit-invert").attr("src", "../../../Static/images/work/energy/energy-007-light.png");
+		}
+		else{
+			$(".toolkit-invert").attr("src", "../../../Static/images/work/energy/energy-007.png");
+		}
+	}
+	
 
 
 	
