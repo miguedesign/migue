@@ -9,6 +9,18 @@
 */
 
 jQuery(document).ready(function($) {
+
+
+
+	//Random pictures by Nodos
+	var $picNodos = $('#pictureNodos'),
+		$route = './Static/images/',
+		pictureNodos = ["migue@elnodos", "migue@elnodos1", "migue@elnodos2", "migue@elnodos3"],
+		picNodos = Math.floor(Math.random()*pictureNodos.length),
+		$srcBase = $route+pictureNodos[picNodos]+".jpg";
+	
+	$picNodos.attr("src", $srcBase);
+
 	
 	//Remplace Youtube Video 
     var $img = $('.coverDomestika');
