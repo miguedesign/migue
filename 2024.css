@@ -1049,8 +1049,12 @@ iframe{
 
 
 /* ------------------------- Security ------------------------- */
-.Security{ background-color: var(--col-black); color: var(--col-white); }
-.Security .row{ min-height: 100vh; }
+.Security{
+    background-color: var(--col-black);
+    color: var(--col-white); 
+    padding: var(--spacer-lg) var(--spacer);
+}
+/* .Security .row{ min-height: 100vh; } */
 
 .protected{display: block;}
 
@@ -1073,7 +1077,7 @@ iframe{
     border: solid thin var(--col-silver);
     background-color: transparent;
     padding: var(--spacer-tiny);
-    min-width: 300px;
+    min-width: 240px;
     max-width: 500px;
     color: var(--col-white);
     font-size: var(--font-size-sm);
@@ -1272,6 +1276,10 @@ iframe{
     .Case{
         margin-top: var(--line-height-2xl);
         padding-top: var(--spacer-tiny);
+    }
+
+    .protected__content__input {
+        min-width: 320px;
     }
     
 
