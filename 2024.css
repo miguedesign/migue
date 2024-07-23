@@ -965,6 +965,9 @@ iframe{
 .Contact a{
     color: var(--col-white);
 }
+.Contact a:hover{
+    color: var(--col-white);
+}
 
 /* ======================================= Footer ======================================= */
 .Footer{
